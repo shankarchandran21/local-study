@@ -1,0 +1,29 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mongo-express-ingress
+  namespace: my-namespace # namespace where the app is running
+spec:
+  ingressClassName: "nginx"
+  rules:
+  - host: dashboard.com # domain name
+    http:
+      paths:
+      - path: /
+        pathType: Prefix   # ✅ Required field
+        backend:
+          service:
+            name: mongo-express-service # it will want to match service name 
+            port: 
+              number: 8081   # ✅ use Service port, not NodePort
+
+# You can  create multiple domain also 
+
+# if you have same domain and multiple path you can create and  add example given below
+  # - path: /app2
+  #       pathType: Prefix   # ✅ Required field
+  #       backend:
+  #         service:
+  #           name: mongo-express-service # it will want to match service name 
+  #           port: 
+  #             number: 8081   # ✅ use Service port, not NodePort

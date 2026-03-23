@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  selector:
+    app: nginx
+  ports:
+  # Transmission Control Protocol differently (TCP, UDP, SCTP, etc.).
+  # streaming or gaming → often UDP
+    # NOT use TCP: UDP: For fast, real-time stuff where losing some data is okay (e.g., video streaming, online games, DNS).
+    - protocol: TCP 
+      port: 80
+      targetPort: 8080  # this port want to same in deployment containerPort

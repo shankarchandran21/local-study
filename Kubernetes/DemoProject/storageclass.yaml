@@ -1,0 +1,14 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-storage
+provisioner: kubernetes.io/no-provisioner # Local PV, no dynamic provisioning
+volumeBindingMode: WaitForFirstConsumer
+# parameters: 
+#   type: iol 
+#   iopsPerGB: "10" 
+#   fsType: ext4
+
+# For provisioner: kubernetes.io/no-provisioner, the parameters section is ignored, 
+# because local PVs are statically created. Parameters like type,
+#  iopsPerGB are only used with dynamic provisioners (like AWS EBS, GCE PD, etc.).

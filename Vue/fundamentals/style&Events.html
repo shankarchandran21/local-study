@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div  id="app">
+           <div  @click="handleAlert('Hi Shankar div',$event)">
+                 <h1 v-bind:style={backgroundColor:"red",color:"white"}>{{message}}</h1>
+                <p class="padding" v-bind:class="{h1:styleVal,h2:!styleVal}">Random Text</p>
+                <p class="padding" v-bind:class="styleVal?'h1':'h2'">Random Text</p>
+                <p class="padding" :class="[styleVal?'h1':'h2','border']">Random Text 2</p>
+                <button :style="{padding:'20px'}" @click="styleVal = !styleVal">Change Text Style</button>
+                <button :style="{padding:'20px'}" v-on:click="styleVal = !styleVal">Change Text Style</button>
+                <div>
+                        <a href="https://www.youtube.com/watch?v=8pn9KEuXG28&t=3465s" @click.prevent="handleAlert('Hi Shankar Link',$event)">Link For Vue Tutorial </a>
+                        <button :style="{padding:'20px'}" @click="handleAlert('Hi Shankar button',$event)">pop Alert</button>
+                        <button :style="{padding:'20px'}" @click.stop="handleAlert('Hi Shankar button',$event)">pop Alert Stop Parent</button>
+                        <button :style="{padding:'20px'}" @click.once="handleAlert('Hi Shankar button once',$event)">pop Alert Once</button>
+                </div>
+               
+           </div>
+            <div>
+                        <input type="text" @keyup="keyStockTrack($event)" placeholder="KeyStock"/>
+                        <input type="text" @keyup.enter="keyStockTrack($event)" placeholder="KeyStock Enter"/>
+            </div>
+    </div>
+</body>
+<script>
+        const {createApp,ref}  = Vue
+
+        createApp({
+            setup() {
+                const message = ref("Hello Shankar")
+                const styleVal = ref(false)
+                const handleAlert = (text,e)=>{
+                    console.log(e)
+                    alert(text)
+                }
+                const keyStockTrack = (e)=>{
+                    console.log(e)
+                    console.log(e.key)
+                    alert("KeyStock")
+                }
+                return{
+                    message,
+                    styleVal,
+                    handleAlert,
+                    keyStockTrack
+                }
+            }
+        }).mount("#app")
+</script>
+<style>
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+    .h1{
+        font-size: 60px;
+        color: blueviolet;
+    }
+    .h2{
+        font-size: 40px;
+        color:brown;
+    }
+    .padding{
+        padding: 10px;
+    }
+    .border{
+        border:1px solid black
+    }
+</style>
+</html>

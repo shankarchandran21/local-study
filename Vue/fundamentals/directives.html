@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="vue3Demon">
+        <div v-html="printHtml()"></div>
+        <h1>Random number 1-10 : {{randomNumber()}}</h1>
+        <h1 v-once>Render once Random number 1-10 : {{randomNumber()}}</h1>
+        <a v-bind:href="VueGuideURL">Link for Guide</a>
+        <h1 v-show="visible">Hi Shankar it's visible toggle using v-show</h1>
+        <h1 v-if="visible">Hi Shankar it's visible toggle using v-if</h1>
+        <button @click="visible =!visible">Visible toggle Using v-show & v-if</button>
+        <div>
+            <h1 v-if="score>=90">Grade A</h1>
+            <h1 v-else-if="score>=75">Grade B</h1>
+            <h1 v-else-if="score>=60">Grade C </h1>         
+            <h1 v-else>Grade F</h1>
+            <button @click="addScore">Add Score +20 {{score}}</button>
+        </div>
+        <h1>V-FOR IN Array</h1>
+        <div v-for="(user,index) in usersArray" :key="index">
+            <h1>Name : {{user.name}}</h1>
+            <p>Age : {{user.age}}</p>
+        </div>
+        <h1>V-once in V-for</h1>
+           <div v-for="(user,index) in usersArray">
+            <h1 v-once>Name : {{user.name}}</h1>
+            <p>Age : {{user.age}}</p>
+        </div>
+        <h1>V-FOR IN OBJECT</h1>
+        <div v-for="(value,key) in user">
+            <h5>{{key}} : {{value}}</h5>
+        </div>
+        <h1>{{message}}</h1>
+        <h1>{{user.name}} is {{user.age}} old</h1>
+        <button @click="handleMessageChange">Text Change</button>
+
+        <h1>Test</h1>
+    </div>
+</body>
+<script>
+    const {createApp,ref} = Vue;
+
+    createApp({
+        setup() {
+            let message = ref("Created vue Shankar")
+            let VueGuideURL = "https://vuejs.org/guide/introduction.html"
+            let visible = ref(true)
+            let score = ref(0)
+            let usersArray =[
+                {
+                    name:"Shankar",
+                    age:26
+                },
+                {
+                    name:"Alex",
+                    age:23,
+                },
+                {
+                    name:"Sanjay",
+                    age:22
+                }
+            ]
+            const user ={
+                name:"Shankar",
+                age:26,
+                salary:30000000,
+                skill:["Nextjs","Vuejs","React","Docker","Kubernetes","sql","mern"]
+            }
+            function handleMessageChange(){
+                if(message.value === "Created vue Shankar"){
+                    message.value = "Updated text using function"
+                }else{
+                    message.value = "Created vue Shankar"
+                }
+            }
+            function randomNumber(){
+                return Math.floor(Math.random() *10) +1
+            }
+            function printHtml(){
+                return `<h1>Print Html Shankar!!</h1>`
+            }
+            function addScore (){
+                if(score.value<100){
+                  console.log("INNNNNNN")
+                
+                  score.value += 20
+              }
+            }
+            return{
+                message,
+                user,
+                VueGuideURL,
+                visible,
+                score,
+                usersArray,
+                randomNumber,
+                handleMessageChange,
+                printHtml,
+                addScore
+            }
+        }
+    }).mount('#vue3Demon')
+</script>
+</html>

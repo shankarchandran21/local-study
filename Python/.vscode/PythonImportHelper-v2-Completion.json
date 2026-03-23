@@ -1,0 +1,1746 @@
+[
+    {
+        "label": "psycopg2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "psycopg2",
+        "description": "psycopg2",
+        "detail": "psycopg2",
+        "documentation": {}
+    },
+    {
+        "label": "psycopg2.extras",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "psycopg2.extras",
+        "description": "psycopg2.extras",
+        "detail": "psycopg2.extras",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "get_decrypted_password",
+        "importPath": "password_utils",
+        "description": "password_utils",
+        "isExtraImport": true,
+        "detail": "password_utils",
+        "documentation": {}
+    },
+    {
+        "label": "encrypt_password",
+        "importPath": "password_utils",
+        "description": "password_utils",
+        "isExtraImport": true,
+        "detail": "password_utils",
+        "documentation": {}
+    },
+    {
+        "label": "Fernet",
+        "importPath": "cryptography.fernet",
+        "description": "cryptography.fernet",
+        "isExtraImport": true,
+        "detail": "cryptography.fernet",
+        "documentation": {}
+    },
+    {
+        "label": "Fernet",
+        "importPath": "cryptography.fernet",
+        "description": "cryptography.fernet",
+        "isExtraImport": true,
+        "detail": "cryptography.fernet",
+        "documentation": {}
+    },
+    {
+        "label": "traceback",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "traceback",
+        "description": "traceback",
+        "detail": "traceback",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "function",
+        "description": "function",
+        "isExtraImport": true,
+        "detail": "function",
+        "documentation": {}
+    },
+    {
+        "label": "partial",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "reduce",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "dad",
+        "importPath": "inheritance",
+        "description": "inheritance",
+        "isExtraImport": true,
+        "detail": "inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "importPath": "program",
+        "description": "program",
+        "isExtraImport": true,
+        "detail": "program",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "messag",
+        "kind": 2,
+        "importPath": "Basic_Python.closure.closure",
+        "description": "Basic_Python.closure.closure",
+        "peekOfCode": "def message (msg):\n    def inner():\n        print(\"Hi shankar you receive message:\",msg)\n    return inner\nsayHi = message(\"How are you shankar\")\nsayHi()",
+        "detail": "Basic_Python.closure.closure",
+        "documentation": {}
+    },
+    {
+        "label": "sayHi",
+        "kind": 5,
+        "importPath": "Basic_Python.closure.closure",
+        "description": "Basic_Python.closure.closure",
+        "peekOfCode": "sayHi = message(\"How are you shankar\")\nsayHi()",
+        "detail": "Basic_Python.closure.closure",
+        "documentation": {}
+    },
+    {
+        "label": "connect_to_db",
+        "kind": 2,
+        "importPath": "Basic_Python.DB_Connection.db_connection",
+        "description": "Basic_Python.DB_Connection.db_connection",
+        "peekOfCode": "def connect_to_db():\n    return psycopg2.connect(\n        host=\"localhost\",\n        database=\"test\",\n        user=\"postgres\",\n        password=str.__str__(get_decrypted_password()),\n        cursor_factory=psycopg2.extras.DictCursor\n    )\nconnection = connect_to_db()\ntry:",
+        "detail": "Basic_Python.DB_Connection.db_connection",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "Basic_Python.DB_Connection.db_connection",
+        "description": "Basic_Python.DB_Connection.db_connection",
+        "peekOfCode": "connection = connect_to_db()\ntry:\n    print(get_decrypted_password().upper())\n    print(get_decrypted_password())\n    with connection.cursor() as cursor:\n        create_query = \"\"\"\n            CREATE TABLE IF NOT EXISTS employees (\n                id SERIAL PRIMARY KEY,\n                name VARCHAR(100),\n                department VARCHAR(100)",
+        "detail": "Basic_Python.DB_Connection.db_connection",
+        "documentation": {}
+    },
+    {
+        "label": "generate_key",
+        "kind": 2,
+        "importPath": "Basic_Python.DB_Connection.encrypt_once",
+        "description": "Basic_Python.DB_Connection.encrypt_once",
+        "peekOfCode": "def generate_key():\n    key = Fernet.generate_key()\n    with open('secret.key',\"wb\") as f:\n        f.write(key)\n    print(\"Key saved to secret.key file\")\nif __name__ ==\"__main__\":\n    # Uncomment this only the first time\n    generate_key()\n    dbPassword=input(\"Enter your DB password : \")\n    try:",
+        "detail": "Basic_Python.DB_Connection.encrypt_once",
+        "documentation": {}
+    },
+    {
+        "label": "FakeStr",
+        "kind": 6,
+        "importPath": "Basic_Python.DB_Connection.password_utils",
+        "description": "Basic_Python.DB_Connection.password_utils",
+        "peekOfCode": "class FakeStr(str):\n    def __str__(self): # if i try to print it will run automatically\n        return '*******'\n    def __repr__(self): # if i try to log it will run automatically\n        return '*******'\n# Read the key from the file\ndef load_key():\n    return open('secret.key','rb').read()\n# encrypt Function\ndef encrypt_password(password):",
+        "detail": "Basic_Python.DB_Connection.password_utils",
+        "documentation": {}
+    },
+    {
+        "label": "load_key",
+        "kind": 2,
+        "importPath": "Basic_Python.DB_Connection.password_utils",
+        "description": "Basic_Python.DB_Connection.password_utils",
+        "peekOfCode": "def load_key():\n    return open('secret.key','rb').read()\n# encrypt Function\ndef encrypt_password(password):\n    key = load_key() #  get secret key\n    f= Fernet(key)\n    # using secret key the password is encrypt\n    return f.encrypt(password.encode())\n# decrypt Function\ndef decrypt_password(encrypted_password):",
+        "detail": "Basic_Python.DB_Connection.password_utils",
+        "documentation": {}
+    },
+    {
+        "label": "encrypt_password",
+        "kind": 2,
+        "importPath": "Basic_Python.DB_Connection.password_utils",
+        "description": "Basic_Python.DB_Connection.password_utils",
+        "peekOfCode": "def encrypt_password(password):\n    key = load_key() #  get secret key\n    f= Fernet(key)\n    # using secret key the password is encrypt\n    return f.encrypt(password.encode())\n# decrypt Function\ndef decrypt_password(encrypted_password):\n    key = load_key() #  get secret key\n    f= Fernet(key)\n    # using secret key the password is decrypt",
+        "detail": "Basic_Python.DB_Connection.password_utils",
+        "documentation": {}
+    },
+    {
+        "label": "decrypt_password",
+        "kind": 2,
+        "importPath": "Basic_Python.DB_Connection.password_utils",
+        "description": "Basic_Python.DB_Connection.password_utils",
+        "peekOfCode": "def decrypt_password(encrypted_password):\n    key = load_key() #  get secret key\n    f= Fernet(key)\n    # using secret key the password is decrypt\n    decrypted = f.decrypt(encrypted_password).decode()\n    return FakeStr(decrypted)\ndef get_decrypted_password():\n    # this is the value of decrypted by secret key and password\n    encrypted_password =b'gAAAAABpOpEbzEbVMEmr4aUBUt-XJxsR2SPSx_LysWhT6oDgQC9Oi3GvIFHIyHP37AbtOikju1seyFVIC4qyLIBb9wCelECDpA=='\n    return decrypt_password(encrypted_password)",
+        "detail": "Basic_Python.DB_Connection.password_utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_decrypted_password",
+        "kind": 2,
+        "importPath": "Basic_Python.DB_Connection.password_utils",
+        "description": "Basic_Python.DB_Connection.password_utils",
+        "peekOfCode": "def get_decrypted_password():\n    # this is the value of decrypted by secret key and password\n    encrypted_password =b'gAAAAABpOpEbzEbVMEmr4aUBUt-XJxsR2SPSx_LysWhT6oDgQC9Oi3GvIFHIyHP37AbtOikju1seyFVIC4qyLIBb9wCelECDpA=='\n    return decrypt_password(encrypted_password)",
+        "detail": "Basic_Python.DB_Connection.password_utils",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Basic_Python.exceptionHandling.exceptionHandling",
+        "description": "Basic_Python.exceptionHandling.exceptionHandling",
+        "peekOfCode": "result = None\ntry:\n    a=10\n    b=0\n    result = a/b\nexcept ZeroDivisionError:\n    print(\"Can't divide with 0\")\nexcept FileNotFoundError:\n    print(\"File not found\")\nexcept Exception: # Exception used for don't know what error it's ",
+        "detail": "Basic_Python.exceptionHandling.exceptionHandling",
+        "documentation": {}
+    },
+    {
+        "label": "file",
+        "kind": 5,
+        "importPath": "Basic_Python.fileHandling.Append",
+        "description": "Basic_Python.fileHandling.Append",
+        "peekOfCode": "file = open('textFile.txt',\"a\")\nfile.write(\"Adding new line \\n\")\nfile.close()",
+        "detail": "Basic_Python.fileHandling.Append",
+        "documentation": {}
+    },
+    {
+        "label": "file",
+        "kind": 5,
+        "importPath": "Basic_Python.fileHandling.Read",
+        "description": "Basic_Python.fileHandling.Read",
+        "peekOfCode": "file = open(\"textFile.txt\",\"r\")\ncontent = file.read()\nprint(content)\nfile.close()",
+        "detail": "Basic_Python.fileHandling.Read",
+        "documentation": {}
+    },
+    {
+        "label": "content",
+        "kind": 5,
+        "importPath": "Basic_Python.fileHandling.Read",
+        "description": "Basic_Python.fileHandling.Read",
+        "peekOfCode": "content = file.read()\nprint(content)\nfile.close()",
+        "detail": "Basic_Python.fileHandling.Read",
+        "documentation": {}
+    },
+    {
+        "label": "file",
+        "kind": 5,
+        "importPath": "Basic_Python.fileHandling.write",
+        "description": "Basic_Python.fileHandling.write",
+        "peekOfCode": "file = open('textFile.txt',\"w\")\nfile.write(\"Welcome to Python Study\\n\")\nfile.write(\"This is a new file\\n\")\nfile.close()",
+        "detail": "Basic_Python.fileHandling.write",
+        "documentation": {}
+    },
+    {
+        "label": "function_name",
+        "kind": 2,
+        "importPath": "Basic_Python.function.function",
+        "description": "Basic_Python.function.function",
+        "peekOfCode": "def function_name():\n    #logic here\n    pass\ndef greet(name):\n    return f\"Hello, {name}!\"\nprint(greet(\"Alice\"))  # Output: Hello, Alice!\ndef add(a, b):\n    return a + b\ndef addMultipleNumbers(*args):\n    print(type(args))  # <class 'tuple'>",
+        "detail": "Basic_Python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "greet",
+        "kind": 2,
+        "importPath": "Basic_Python.function.function",
+        "description": "Basic_Python.function.function",
+        "peekOfCode": "def greet(name):\n    return f\"Hello, {name}!\"\nprint(greet(\"Alice\"))  # Output: Hello, Alice!\ndef add(a, b):\n    return a + b\ndef addMultipleNumbers(*args):\n    print(type(args))  # <class 'tuple'>\n    total = 0\n    for number in args:\n        total += number",
+        "detail": "Basic_Python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "Basic_Python.function.function",
+        "description": "Basic_Python.function.function",
+        "peekOfCode": "def add(a, b):\n    return a + b\ndef addMultipleNumbers(*args):\n    print(type(args))  # <class 'tuple'>\n    total = 0\n    for number in args:\n        total += number\n    return total\nresult_args =addMultipleNumbers(1, 2, 3, 4, 5)  # Numbers to add: (1, 2, 3, 4, 5)\nprint(result_args)  # Output: 15",
+        "detail": "Basic_Python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "addMultipleNumbers",
+        "kind": 2,
+        "importPath": "Basic_Python.function.function",
+        "description": "Basic_Python.function.function",
+        "peekOfCode": "def addMultipleNumbers(*args):\n    print(type(args))  # <class 'tuple'>\n    total = 0\n    for number in args:\n        total += number\n    return total\nresult_args =addMultipleNumbers(1, 2, 3, 4, 5)  # Numbers to add: (1, 2, 3, 4, 5)\nprint(result_args)  # Output: 15\ndef keyValueFunction(**kwargs):\n    print(type(kwargs))  # <class 'dict'>",
+        "detail": "Basic_Python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "keyValueFunction",
+        "kind": 2,
+        "importPath": "Basic_Python.function.function",
+        "description": "Basic_Python.function.function",
+        "peekOfCode": "def keyValueFunction(**kwargs):\n    print(type(kwargs))  # <class 'dict'>\n    for key, value in kwargs.items():\n        print(f\"{key}: {value}\")\nkeyValueFunction(name=\"Alice\", age=30, city=\"New York\")",
+        "detail": "Basic_Python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Basic_Python.function.testCode",
+        "description": "Basic_Python.function.testCode",
+        "peekOfCode": "result = add(1,2)\nprint(result)",
+        "detail": "Basic_Python.function.testCode",
+        "documentation": {}
+    },
+    {
+        "label": "button_click",
+        "kind": 2,
+        "importPath": "Basic_Python.functions.callbackFun.callbackFun",
+        "description": "Basic_Python.functions.callbackFun.callbackFun",
+        "peekOfCode": "def button_click(callback):\n    print(\"Button clicked\")\n    callback()\ndef show_message():\n    print('Hi Shankar')\nbutton_click(show_message)\ndef button_click2(callback,msg):\n    print(\"Button clicked\")\n    callback(msg)\ndef show_message2(msg):",
+        "detail": "Basic_Python.functions.callbackFun.callbackFun",
+        "documentation": {}
+    },
+    {
+        "label": "show_message",
+        "kind": 2,
+        "importPath": "Basic_Python.functions.callbackFun.callbackFun",
+        "description": "Basic_Python.functions.callbackFun.callbackFun",
+        "peekOfCode": "def show_message():\n    print('Hi Shankar')\nbutton_click(show_message)\ndef button_click2(callback,msg):\n    print(\"Button clicked\")\n    callback(msg)\ndef show_message2(msg):\n    print(msg)\nbutton_click2(show_message2,'Hi Shankar')",
+        "detail": "Basic_Python.functions.callbackFun.callbackFun",
+        "documentation": {}
+    },
+    {
+        "label": "button_click2",
+        "kind": 2,
+        "importPath": "Basic_Python.functions.callbackFun.callbackFun",
+        "description": "Basic_Python.functions.callbackFun.callbackFun",
+        "peekOfCode": "def button_click2(callback,msg):\n    print(\"Button clicked\")\n    callback(msg)\ndef show_message2(msg):\n    print(msg)\nbutton_click2(show_message2,'Hi Shankar')",
+        "detail": "Basic_Python.functions.callbackFun.callbackFun",
+        "documentation": {}
+    },
+    {
+        "label": "show_message2",
+        "kind": 2,
+        "importPath": "Basic_Python.functions.callbackFun.callbackFun",
+        "description": "Basic_Python.functions.callbackFun.callbackFun",
+        "peekOfCode": "def show_message2(msg):\n    print(msg)\nbutton_click2(show_message2,'Hi Shankar')",
+        "detail": "Basic_Python.functions.callbackFun.callbackFun",
+        "documentation": {}
+    },
+    {
+        "label": "ad",
+        "kind": 2,
+        "importPath": "Basic_Python.functions.composeFun.composeFun",
+        "description": "Basic_Python.functions.composeFun.composeFun",
+        "peekOfCode": "def add (val):\n    return val +2\ndef multiply(val):\n    return val * 2\ndef composeFun(val):\n    return add(multiply(val))\nprint(composeFun(2))",
+        "detail": "Basic_Python.functions.composeFun.composeFun",
+        "documentation": {}
+    },
+    {
+        "label": "multiply",
+        "kind": 2,
+        "importPath": "Basic_Python.functions.composeFun.composeFun",
+        "description": "Basic_Python.functions.composeFun.composeFun",
+        "peekOfCode": "def multiply(val):\n    return val * 2\ndef composeFun(val):\n    return add(multiply(val))\nprint(composeFun(2))",
+        "detail": "Basic_Python.functions.composeFun.composeFun",
+        "documentation": {}
+    },
+    {
+        "label": "composeFun",
+        "kind": 2,
+        "importPath": "Basic_Python.functions.composeFun.composeFun",
+        "description": "Basic_Python.functions.composeFun.composeFun",
+        "peekOfCode": "def composeFun(val):\n    return add(multiply(val))\nprint(composeFun(2))",
+        "detail": "Basic_Python.functions.composeFun.composeFun",
+        "documentation": {}
+    },
+    {
+        "label": "gmail_email",
+        "kind": 2,
+        "importPath": "Basic_Python.functions.HOF.argumentFun",
+        "description": "Basic_Python.functions.HOF.argumentFun",
+        "peekOfCode": "def gmail_email(name,domain='gmail.com'):\n    return f\"{name}@{domain}\"\ndef ymail_email(name,domain='ymail.com'):\n    return f\"{name}@{domain}\"\ndef build_email(name,email_fun):\n    return email_fun(name)\nprint(build_email('Shankar',gmail_email))",
+        "detail": "Basic_Python.functions.HOF.argumentFun",
+        "documentation": {}
+    },
+    {
+        "label": "ymail_email",
+        "kind": 2,
+        "importPath": "Basic_Python.functions.HOF.argumentFun",
+        "description": "Basic_Python.functions.HOF.argumentFun",
+        "peekOfCode": "def ymail_email(name,domain='ymail.com'):\n    return f\"{name}@{domain}\"\ndef build_email(name,email_fun):\n    return email_fun(name)\nprint(build_email('Shankar',gmail_email))",
+        "detail": "Basic_Python.functions.HOF.argumentFun",
+        "documentation": {}
+    },
+    {
+        "label": "build_email",
+        "kind": 2,
+        "importPath": "Basic_Python.functions.HOF.argumentFun",
+        "description": "Basic_Python.functions.HOF.argumentFun",
+        "peekOfCode": "def build_email(name,email_fun):\n    return email_fun(name)\nprint(build_email('Shankar',gmail_email))",
+        "detail": "Basic_Python.functions.HOF.argumentFun",
+        "documentation": {}
+    },
+    {
+        "label": "email_builder",
+        "kind": 2,
+        "importPath": "Basic_Python.functions.HOF.returnFun",
+        "description": "Basic_Python.functions.HOF.returnFun",
+        "peekOfCode": "def email_builder(domain):\n    def build(name):\n        return f\"{name}@{domain}\"\n    return build\ngmail = email_builder('gmail')('alex')\nymail = email_builder('yamil')\nprint(ymail('Shankar'))",
+        "detail": "Basic_Python.functions.HOF.returnFun",
+        "documentation": {}
+    },
+    {
+        "label": "gmail",
+        "kind": 5,
+        "importPath": "Basic_Python.functions.HOF.returnFun",
+        "description": "Basic_Python.functions.HOF.returnFun",
+        "peekOfCode": "gmail = email_builder('gmail')('alex')\nymail = email_builder('yamil')\nprint(ymail('Shankar'))",
+        "detail": "Basic_Python.functions.HOF.returnFun",
+        "documentation": {}
+    },
+    {
+        "label": "ymail",
+        "kind": 5,
+        "importPath": "Basic_Python.functions.HOF.returnFun",
+        "description": "Basic_Python.functions.HOF.returnFun",
+        "peekOfCode": "ymail = email_builder('yamil')\nprint(ymail('Shankar'))",
+        "detail": "Basic_Python.functions.HOF.returnFun",
+        "documentation": {}
+    },
+    {
+        "label": "calCulate_price",
+        "kind": 2,
+        "importPath": "Basic_Python.functions.partialFun.partialFun",
+        "description": "Basic_Python.functions.partialFun.partialFun",
+        "peekOfCode": "def calCulate_price(base_price,tax_rate):\n    return base_price * (1+tax_rate)\nprint(calCulate_price(1000,0.18))\nprint(calCulate_price(1800,0.18))\n'''\nhear tax_rate is same for every argument so we send it at once and reuse that again and again tha is called partial function\n'''\n# partial Function\ndef GST_calculate(base_price,tax_rate):\n    return base_price * (1+tax_rate)",
+        "detail": "Basic_Python.functions.partialFun.partialFun",
+        "documentation": {}
+    },
+    {
+        "label": "GST_calculate",
+        "kind": 2,
+        "importPath": "Basic_Python.functions.partialFun.partialFun",
+        "description": "Basic_Python.functions.partialFun.partialFun",
+        "peekOfCode": "def GST_calculate(base_price,tax_rate):\n    return base_price * (1+tax_rate)\n# create partial function\nprice_with_get = partial(GST_calculate,tax_rate=0.18)\n# hear we called the partial function\nprint(price_with_get(1000))",
+        "detail": "Basic_Python.functions.partialFun.partialFun",
+        "documentation": {}
+    },
+    {
+        "label": "price_with_get",
+        "kind": 5,
+        "importPath": "Basic_Python.functions.partialFun.partialFun",
+        "description": "Basic_Python.functions.partialFun.partialFun",
+        "peekOfCode": "price_with_get = partial(GST_calculate,tax_rate=0.18)\n# hear we called the partial function\nprint(price_with_get(1000))",
+        "detail": "Basic_Python.functions.partialFun.partialFun",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "Basic_Python.functions.pure&impureFun.pure&ImpureFun",
+        "description": "Basic_Python.functions.pure&impureFun.pure&ImpureFun",
+        "peekOfCode": "def add(amount):\n   global total\n   total += amount #it's called side effect of impure function it will affect the outside of  values(total) it's called impure function\n   print('i am from Add fun',total)\ndef test():\n    print(\"i am from test fun\",total)\nadd(2)\ntest()\n'''\nA pure function is a function that:",
+        "detail": "Basic_Python.functions.pure&impureFun.pure&ImpureFun",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "kind": 2,
+        "importPath": "Basic_Python.functions.pure&impureFun.pure&ImpureFun",
+        "description": "Basic_Python.functions.pure&impureFun.pure&ImpureFun",
+        "peekOfCode": "def test():\n    print(\"i am from test fun\",total)\nadd(2)\ntest()\n'''\nA pure function is a function that:\n        Always returns the same output for the same input\n        Has no side effects\n        does NOT change global variables\n        does NOT modify objects outside",
+        "detail": "Basic_Python.functions.pure&impureFun.pure&ImpureFun",
+        "documentation": {}
+    },
+    {
+        "label": "square",
+        "kind": 2,
+        "importPath": "Basic_Python.functions.pure&impureFun.pure&ImpureFun",
+        "description": "Basic_Python.functions.pure&impureFun.pure&ImpureFun",
+        "peekOfCode": "def square(n):\n    return n * n",
+        "detail": "Basic_Python.functions.pure&impureFun.pure&ImpureFun",
+        "documentation": {}
+    },
+    {
+        "label": "total",
+        "kind": 5,
+        "importPath": "Basic_Python.functions.pure&impureFun.pure&ImpureFun",
+        "description": "Basic_Python.functions.pure&impureFun.pure&ImpureFun",
+        "peekOfCode": "total = 2\ndef add(amount):\n   global total\n   total += amount #it's called side effect of impure function it will affect the outside of  values(total) it's called impure function\n   print('i am from Add fun',total)\ndef test():\n    print(\"i am from test fun\",total)\nadd(2)\ntest()\n'''",
+        "detail": "Basic_Python.functions.pure&impureFun.pure&ImpureFun",
+        "documentation": {}
+    },
+    {
+        "label": "factorial",
+        "kind": 2,
+        "importPath": "Basic_Python.functions.recursiveFun.recursiveFun",
+        "description": "Basic_Python.functions.recursiveFun.recursiveFun",
+        "peekOfCode": "def factorial(n):\n    if n == 1: return 1\n    return n * factorial(n-1) \nprint(factorial(5))",
+        "detail": "Basic_Python.functions.recursiveFun.recursiveFun",
+        "documentation": {}
+    },
+    {
+        "label": "read_lines_bad",
+        "kind": 2,
+        "importPath": "Basic_Python.generator_and_yield.generator_and_yield",
+        "description": "Basic_Python.generator_and_yield.generator_and_yield",
+        "peekOfCode": "def read_lines_bad(filename):\n    with open(filename) as f:\n        return f.readlines()\n# With yield (good – reads one line at a time):\ndef read_lines(filename):\n    with open(filename) as f:\n        for line in f:\n            yield line\nfor line in read_lines(\"bigfile.txt\"):\n    print(line)",
+        "detail": "Basic_Python.generator_and_yield.generator_and_yield",
+        "documentation": {}
+    },
+    {
+        "label": "read_lines",
+        "kind": 2,
+        "importPath": "Basic_Python.generator_and_yield.generator_and_yield",
+        "description": "Basic_Python.generator_and_yield.generator_and_yield",
+        "peekOfCode": "def read_lines(filename):\n    with open(filename) as f:\n        for line in f:\n            yield line\nfor line in read_lines(\"bigfile.txt\"):\n    print(line)",
+        "detail": "Basic_Python.generator_and_yield.generator_and_yield",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "Basic_Python.inpuHandling.inputHandling",
+        "description": "Basic_Python.inpuHandling.inputHandling",
+        "peekOfCode": "a = int(input('Enter number A: '))\nb= int(input('Enter number B: '))\nprint(a+b)",
+        "detail": "Basic_Python.inpuHandling.inputHandling",
+        "documentation": {}
+    },
+    {
+        "label": "full_name",
+        "kind": 5,
+        "importPath": "Basic_Python.inpuHandling.testApp",
+        "description": "Basic_Python.inpuHandling.testApp",
+        "peekOfCode": "full_name = sys.argv[1]\nemail = sys.argv[2]\nallParams = \" \".join(sys.argv[1:]) # Join all parameters except the script name and 1: will take all parameters after script name\nprint(sys.argv)\nprint(\"Hello,\", full_name)\nprint(\"Your email is:\", email)\nprint(\"All parameters:\", allParams)",
+        "detail": "Basic_Python.inpuHandling.testApp",
+        "documentation": {}
+    },
+    {
+        "label": "email",
+        "kind": 5,
+        "importPath": "Basic_Python.inpuHandling.testApp",
+        "description": "Basic_Python.inpuHandling.testApp",
+        "peekOfCode": "email = sys.argv[2]\nallParams = \" \".join(sys.argv[1:]) # Join all parameters except the script name and 1: will take all parameters after script name\nprint(sys.argv)\nprint(\"Hello,\", full_name)\nprint(\"Your email is:\", email)\nprint(\"All parameters:\", allParams)",
+        "detail": "Basic_Python.inpuHandling.testApp",
+        "documentation": {}
+    },
+    {
+        "label": "allParams",
+        "kind": 5,
+        "importPath": "Basic_Python.inpuHandling.testApp",
+        "description": "Basic_Python.inpuHandling.testApp",
+        "peekOfCode": "allParams = \" \".join(sys.argv[1:]) # Join all parameters except the script name and 1: will take all parameters after script name\nprint(sys.argv)\nprint(\"Hello,\", full_name)\nprint(\"Your email is:\", email)\nprint(\"All parameters:\", allParams)",
+        "detail": "Basic_Python.inpuHandling.testApp",
+        "documentation": {}
+    },
+    {
+        "label": "Employee",
+        "kind": 6,
+        "importPath": "Basic_Python.instance_class_satic.instance_class_satic",
+        "description": "Basic_Python.instance_class_satic.instance_class_satic",
+        "peekOfCode": "class Employee:\n    company = \"OpenAI\" # class level variable\n    def instant_method(self,new_name):\n        # Because instance attributes override class attributes.\n        self.company = new_name # Python creates an instance-level variable. It does not modify the class-level variable.\n    @classmethod\n    def change_company(cls,new_name):\n        cls.company = new_name\n    @staticmethod\n    def try_change_company(new_name):",
+        "detail": "Basic_Python.instance_class_satic.instance_class_satic",
+        "documentation": {}
+    },
+    {
+        "label": "employee",
+        "kind": 5,
+        "importPath": "Basic_Python.instance_class_satic.instance_class_satic",
+        "description": "Basic_Python.instance_class_satic.instance_class_satic",
+        "peekOfCode": "employee = Employee()\nemployee.instant_method(\"BMW\")\nprint(Employee.company)",
+        "detail": "Basic_Python.instance_class_satic.instance_class_satic",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Basic_Python.Lambda_Map_Filter_Reduce.filter",
+        "description": "Basic_Python.Lambda_Map_Filter_Reduce.filter",
+        "peekOfCode": "result = list(filter(lambda val : val%2==0,nums))\ntest = list(filter(lambda num : num/2 == 1,nums ))\nprint(test)\nprint(result)",
+        "detail": "Basic_Python.Lambda_Map_Filter_Reduce.filter",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "kind": 5,
+        "importPath": "Basic_Python.Lambda_Map_Filter_Reduce.filter",
+        "description": "Basic_Python.Lambda_Map_Filter_Reduce.filter",
+        "peekOfCode": "test = list(filter(lambda num : num/2 == 1,nums ))\nprint(test)\nprint(result)",
+        "detail": "Basic_Python.Lambda_Map_Filter_Reduce.filter",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 5,
+        "importPath": "Basic_Python.Lambda_Map_Filter_Reduce.lambda",
+        "description": "Basic_Python.Lambda_Map_Filter_Reduce.lambda",
+        "peekOfCode": "add = lambda a,b : a+b\nprint(add(2,2))\nsquare = lambda x : x*x\nprint(square(2))",
+        "detail": "Basic_Python.Lambda_Map_Filter_Reduce.lambda",
+        "documentation": {}
+    },
+    {
+        "label": "square",
+        "kind": 5,
+        "importPath": "Basic_Python.Lambda_Map_Filter_Reduce.lambda",
+        "description": "Basic_Python.Lambda_Map_Filter_Reduce.lambda",
+        "peekOfCode": "square = lambda x : x*x\nprint(square(2))",
+        "detail": "Basic_Python.Lambda_Map_Filter_Reduce.lambda",
+        "documentation": {}
+    },
+    {
+        "label": "fruits",
+        "kind": 5,
+        "importPath": "Basic_Python.Lambda_Map_Filter_Reduce.map",
+        "description": "Basic_Python.Lambda_Map_Filter_Reduce.map",
+        "peekOfCode": "fruits = ['apple','orange','mango']\nresult = list(map(lambda fruit:fruit.upper(),fruits))\nprint(result)",
+        "detail": "Basic_Python.Lambda_Map_Filter_Reduce.map",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Basic_Python.Lambda_Map_Filter_Reduce.map",
+        "description": "Basic_Python.Lambda_Map_Filter_Reduce.map",
+        "peekOfCode": "result = list(map(lambda fruit:fruit.upper(),fruits))\nprint(result)",
+        "detail": "Basic_Python.Lambda_Map_Filter_Reduce.map",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "Basic_Python.Lambda_Map_Filter_Reduce.reduce",
+        "description": "Basic_Python.Lambda_Map_Filter_Reduce.reduce",
+        "peekOfCode": "num = [1,2,3,4,5]\nresult = reduce(lambda a,b:a+b,num)\nprint(result)\nfindMax = reduce(lambda a,b:a if a>b else b,num)\nprint(findMax)",
+        "detail": "Basic_Python.Lambda_Map_Filter_Reduce.reduce",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Basic_Python.Lambda_Map_Filter_Reduce.reduce",
+        "description": "Basic_Python.Lambda_Map_Filter_Reduce.reduce",
+        "peekOfCode": "result = reduce(lambda a,b:a+b,num)\nprint(result)\nfindMax = reduce(lambda a,b:a if a>b else b,num)\nprint(findMax)",
+        "detail": "Basic_Python.Lambda_Map_Filter_Reduce.reduce",
+        "documentation": {}
+    },
+    {
+        "label": "findMax",
+        "kind": 5,
+        "importPath": "Basic_Python.Lambda_Map_Filter_Reduce.reduce",
+        "description": "Basic_Python.Lambda_Map_Filter_Reduce.reduce",
+        "peekOfCode": "findMax = reduce(lambda a,b:a if a>b else b,num)\nprint(findMax)",
+        "detail": "Basic_Python.Lambda_Map_Filter_Reduce.reduce",
+        "documentation": {}
+    },
+    {
+        "label": "playList",
+        "kind": 5,
+        "importPath": "Basic_Python.lis_tuple_set_dictionaries.list.check_iteration",
+        "description": "Basic_Python.lis_tuple_set_dictionaries.list.check_iteration",
+        "peekOfCode": "playList = ['shape of you', 'see you again', 'love me like you do']\nfav_food = ['pizza', 'sushi', 'burger']\nrecent_location = ['new york', 'los angeles', 'chicago']\n#checking item in list\nif 'pizza' in fav_food:\n    print(\"Pizza is in favorite food list.\")\n# get index and value\nfor i,food in enumerate(fav_food):\n    print(f\"{i}{food}\")",
+        "detail": "Basic_Python.lis_tuple_set_dictionaries.list.check_iteration",
+        "documentation": {}
+    },
+    {
+        "label": "fav_food",
+        "kind": 5,
+        "importPath": "Basic_Python.lis_tuple_set_dictionaries.list.check_iteration",
+        "description": "Basic_Python.lis_tuple_set_dictionaries.list.check_iteration",
+        "peekOfCode": "fav_food = ['pizza', 'sushi', 'burger']\nrecent_location = ['new york', 'los angeles', 'chicago']\n#checking item in list\nif 'pizza' in fav_food:\n    print(\"Pizza is in favorite food list.\")\n# get index and value\nfor i,food in enumerate(fav_food):\n    print(f\"{i}{food}\")",
+        "detail": "Basic_Python.lis_tuple_set_dictionaries.list.check_iteration",
+        "documentation": {}
+    },
+    {
+        "label": "recent_location",
+        "kind": 5,
+        "importPath": "Basic_Python.lis_tuple_set_dictionaries.list.check_iteration",
+        "description": "Basic_Python.lis_tuple_set_dictionaries.list.check_iteration",
+        "peekOfCode": "recent_location = ['new york', 'los angeles', 'chicago']\n#checking item in list\nif 'pizza' in fav_food:\n    print(\"Pizza is in favorite food list.\")\n# get index and value\nfor i,food in enumerate(fav_food):\n    print(f\"{i}{food}\")",
+        "detail": "Basic_Python.lis_tuple_set_dictionaries.list.check_iteration",
+        "documentation": {}
+    },
+    {
+        "label": "playList",
+        "kind": 5,
+        "importPath": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "description": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "peekOfCode": "playList = ['shape of you', 'see you again', 'love me like you do']\nfav_food = ['pizza', 'sushi', 'burger']\nrecent_location = ['new york', 'los angeles', 'chicago']\n# it's mutable\n#list method \n# Add an item to the end of the list\nplayList.append('blinding lights')\n# remove the last item from the list\nrecent_location.pop()\n#remove the first item from the list",
+        "detail": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "documentation": {}
+    },
+    {
+        "label": "fav_food",
+        "kind": 5,
+        "importPath": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "description": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "peekOfCode": "fav_food = ['pizza', 'sushi', 'burger']\nrecent_location = ['new york', 'los angeles', 'chicago']\n# it's mutable\n#list method \n# Add an item to the end of the list\nplayList.append('blinding lights')\n# remove the last item from the list\nrecent_location.pop()\n#remove the first item from the list\nfav_food.pop(0)",
+        "detail": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "documentation": {}
+    },
+    {
+        "label": "recent_location",
+        "kind": 5,
+        "importPath": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "description": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "peekOfCode": "recent_location = ['new york', 'los angeles', 'chicago']\n# it's mutable\n#list method \n# Add an item to the end of the list\nplayList.append('blinding lights')\n# remove the last item from the list\nrecent_location.pop()\n#remove the first item from the list\nfav_food.pop(0)\n#push an item to the front of the list",
+        "detail": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "documentation": {}
+    },
+    {
+        "label": "index_of_burger",
+        "kind": 5,
+        "importPath": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "description": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "peekOfCode": "index_of_burger = fav_food.index('burger')\n#find the length of the list\nlength_of_playlist = len(playList)\n#find the count of an item in the list\ncount_of_pizza = fav_food.count('pizza')\n#sort the list\nrecent_location.sort()\n#sort the list in descending order\nplayList.sort(reverse=True)\n#sort the list based on length of the string",
+        "detail": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "documentation": {}
+    },
+    {
+        "label": "length_of_playlist",
+        "kind": 5,
+        "importPath": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "description": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "peekOfCode": "length_of_playlist = len(playList)\n#find the count of an item in the list\ncount_of_pizza = fav_food.count('pizza')\n#sort the list\nrecent_location.sort()\n#sort the list in descending order\nplayList.sort(reverse=True)\n#sort the list based on length of the string\nfav_food.sort(key=len)\n#list Slicing",
+        "detail": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "documentation": {}
+    },
+    {
+        "label": "count_of_pizza",
+        "kind": 5,
+        "importPath": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "description": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "peekOfCode": "count_of_pizza = fav_food.count('pizza')\n#sort the list\nrecent_location.sort()\n#sort the list in descending order\nplayList.sort(reverse=True)\n#sort the list based on length of the string\nfav_food.sort(key=len)\n#list Slicing\n'''\nlist[start : end]",
+        "detail": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "documentation": {}
+    },
+    {
+        "label": "first_two_songs",
+        "kind": 5,
+        "importPath": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "description": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "peekOfCode": "first_two_songs = playList[1:3]\nprint(\"First two songs:\", first_two_songs)",
+        "detail": "Basic_Python.lis_tuple_set_dictionaries.list.list",
+        "documentation": {}
+    },
+    {
+        "label": "uber_cities",
+        "kind": 5,
+        "importPath": "Basic_Python.lis_tuple_set_dictionaries.sets.sets",
+        "description": "Basic_Python.lis_tuple_set_dictionaries.sets.sets",
+        "peekOfCode": "uber_cities = ['chennai','banglore','delhi','coimbatore']\naSet=set(uber_cities)\nprint(aSet)\ncitiesOne = {'chennai','banglore','delhi','coimbatore'}\ncitiesTwo={\"banglore\",\"hyd\",\"delhi\"}\n#union combine two sets and remove the duplicate\nprint(citiesOne.union(citiesTwo))\n#intersection combine only the same values\nprint(citiesOne.intersection(citiesTwo))\n#find difference (Python checks only citiesOne, not both sets.)",
+        "detail": "Basic_Python.lis_tuple_set_dictionaries.sets.sets",
+        "documentation": {}
+    },
+    {
+        "label": "citiesOne",
+        "kind": 5,
+        "importPath": "Basic_Python.lis_tuple_set_dictionaries.sets.sets",
+        "description": "Basic_Python.lis_tuple_set_dictionaries.sets.sets",
+        "peekOfCode": "citiesOne = {'chennai','banglore','delhi','coimbatore'}\ncitiesTwo={\"banglore\",\"hyd\",\"delhi\"}\n#union combine two sets and remove the duplicate\nprint(citiesOne.union(citiesTwo))\n#intersection combine only the same values\nprint(citiesOne.intersection(citiesTwo))\n#find difference (Python checks only citiesOne, not both sets.)\nprint(citiesOne.difference(citiesTwo))\n#add value in set\ncitiesOne.add('karur')",
+        "detail": "Basic_Python.lis_tuple_set_dictionaries.sets.sets",
+        "documentation": {}
+    },
+    {
+        "label": "any_name",
+        "kind": 5,
+        "importPath": "Basic_Python.lis_tuple_set_dictionaries.tuple.tuple",
+        "description": "Basic_Python.lis_tuple_set_dictionaries.tuple.tuple",
+        "peekOfCode": "any_name = names[1]\nprint(any_name )  \n#count in tuple\ncount = names.count('shankar')\nprint(count)\n#index of the value\nindex= names.index('shankar')\nprint(index)",
+        "detail": "Basic_Python.lis_tuple_set_dictionaries.tuple.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "Basic_Python.lis_tuple_set_dictionaries.tuple.tuple",
+        "description": "Basic_Python.lis_tuple_set_dictionaries.tuple.tuple",
+        "peekOfCode": "count = names.count('shankar')\nprint(count)\n#index of the value\nindex= names.index('shankar')\nprint(index)",
+        "detail": "Basic_Python.lis_tuple_set_dictionaries.tuple.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "names",
+        "kind": 5,
+        "importPath": "Basic_Python.loops.loops",
+        "description": "Basic_Python.loops.loops",
+        "peekOfCode": "names = ['shawn', 'alice', 'mike', 'elena']\nfor name in names:\n    print(name.upper())\ncorrect_pin = '1234'\nenter_pin = '123123'\nwhile enter_pin != correct_pin:\n    print(\"Incorrect PIN. Please try again.\")\n    enter_pin = input(\"Enter your PIN: \")\nprint(\"PIN accepted. Access granted.\")\nfor i in range(1, 10):",
+        "detail": "Basic_Python.loops.loops",
+        "documentation": {}
+    },
+    {
+        "label": "correct_pin",
+        "kind": 5,
+        "importPath": "Basic_Python.loops.loops",
+        "description": "Basic_Python.loops.loops",
+        "peekOfCode": "correct_pin = '1234'\nenter_pin = '123123'\nwhile enter_pin != correct_pin:\n    print(\"Incorrect PIN. Please try again.\")\n    enter_pin = input(\"Enter your PIN: \")\nprint(\"PIN accepted. Access granted.\")\nfor i in range(1, 10):\n    if i == 5:\n        break\n    print(i)",
+        "detail": "Basic_Python.loops.loops",
+        "documentation": {}
+    },
+    {
+        "label": "enter_pin",
+        "kind": 5,
+        "importPath": "Basic_Python.loops.loops",
+        "description": "Basic_Python.loops.loops",
+        "peekOfCode": "enter_pin = '123123'\nwhile enter_pin != correct_pin:\n    print(\"Incorrect PIN. Please try again.\")\n    enter_pin = input(\"Enter your PIN: \")\nprint(\"PIN accepted. Access granted.\")\nfor i in range(1, 10):\n    if i == 5:\n        break\n    print(i)\n# Skip negative values ",
+        "detail": "Basic_Python.loops.loops",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "Basic_Python.loops.loops",
+        "description": "Basic_Python.loops.loops",
+        "peekOfCode": "numbers = [10, -5, 3, -1, 7, -2, 0]\nfor number in numbers:\n    if number < 0:\n        continue\n    print(number)\n# pass loop for future implementation\nfor i in range(5):\n    pass  # To be implemented later\n# counter timer\ncount = 0",
+        "detail": "Basic_Python.loops.loops",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "Basic_Python.loops.loops",
+        "description": "Basic_Python.loops.loops",
+        "peekOfCode": "count = 0\nwhile count < 5:\n    print(\"Count is:\", count)\n    count += 1\nprint(\"Counting completed.\",count)\n# Items add in cart\ncart = []\nwhile True:\n    item = input(\"Enter an item to add to the cart (or type 'done' to finish): \")\n    if item.lower() == 'done':",
+        "detail": "Basic_Python.loops.loops",
+        "documentation": {}
+    },
+    {
+        "label": "cart",
+        "kind": 5,
+        "importPath": "Basic_Python.loops.loops",
+        "description": "Basic_Python.loops.loops",
+        "peekOfCode": "cart = []\nwhile True:\n    item = input(\"Enter an item to add to the cart (or type 'done' to finish): \")\n    if item.lower() == 'done':\n        break\n    cart.append(item)\n    print(f\"{item} has been added to your cart.\")\n# range \n'''\nrange(start, stop, step)",
+        "detail": "Basic_Python.loops.loops",
+        "documentation": {}
+    },
+    {
+        "label": "featurePlan",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.abstraction.abstraction",
+        "description": "Basic_Python.oops.abstraction.abstraction",
+        "peekOfCode": "class featurePlan(ABC):\n    @abstractmethod\n    def login(self):\n        pass\n    @abstractmethod\n    def logout(self):\n        pass\nclass webApp(featurePlan):\n    def login(self):\n        print(\"Login\")",
+        "detail": "Basic_Python.oops.abstraction.abstraction",
+        "documentation": {}
+    },
+    {
+        "label": "webApp",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.abstraction.abstraction",
+        "description": "Basic_Python.oops.abstraction.abstraction",
+        "peekOfCode": "class webApp(featurePlan):\n    def login(self):\n        print(\"Login\")\n    def logout(self):\n        print(\"logout\")\ns1=webApp()\ns1.login()",
+        "detail": "Basic_Python.oops.abstraction.abstraction",
+        "documentation": {}
+    },
+    {
+        "label": "parent",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "description": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "peekOfCode": "class parent:\n    def __init__(self):\n        self.publicUser = 'Public Variable'\n        self._protectedUser = 'protected'\n        self.__privateUser = 'private'\n    def accessSpecifier(self):\n            print(f\"it's public : {self.publicUser}\")\n            print(f\"it's protected : {self._protectedUser}\")\n            print(f\"it's private : {self.__privateUser}\")\nclass child(parent):",
+        "detail": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "documentation": {}
+    },
+    {
+        "label": "child",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "description": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "peekOfCode": "class child(parent):\n      def ChildAccessSpecifier(self):\n            print(f\"it's public : {self.publicUser}\")\n            print(f\"it's protected : {self._protectedUser}\")\n            try:  \n                print(f\"it's private : {self.__privateUser}\")\n            except AttributeError:\n                print(\"Private: cannot access (AttributeError)\")\nclass stranger:\n     def access_from_other_class(self,obj):",
+        "detail": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "documentation": {}
+    },
+    {
+        "label": "stranger",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "description": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "peekOfCode": "class stranger:\n     def access_from_other_class(self,obj):\n            print(f\"it's public : {obj.publicUser}\")\n            print(f\"it's protected : {obj._protectedUser}\") #it's work but not recommended\n            print(f\"it's private : {obj._parent__privateUser}\") #it's work but not recommended and it's called name mangling\n            try:  \n                print(f\"it's private : {obj.__privateUser}\") #it's throw error\n            except AttributeError:\n                print(\"Private: cannot access (AttributeError)\")          \np = parent()",
+        "detail": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "description": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "peekOfCode": "p = parent()\ns1 = child()\ns1.ChildAccessSpecifier()\nprint(\"\\n\")\ns2 = stranger()\ns2.access_from_other_class(s1)\nprint(\"\\n\")\ns2.access_from_other_class(p)",
+        "detail": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "documentation": {}
+    },
+    {
+        "label": "s1",
+        "kind": 5,
+        "importPath": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "description": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "peekOfCode": "s1 = child()\ns1.ChildAccessSpecifier()\nprint(\"\\n\")\ns2 = stranger()\ns2.access_from_other_class(s1)\nprint(\"\\n\")\ns2.access_from_other_class(p)",
+        "detail": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "documentation": {}
+    },
+    {
+        "label": "s2",
+        "kind": 5,
+        "importPath": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "description": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "peekOfCode": "s2 = stranger()\ns2.access_from_other_class(s1)\nprint(\"\\n\")\ns2.access_from_other_class(p)",
+        "detail": "Basic_Python.oops.accessSpecifiers_&_modifiers.accessSpecifiers",
+        "documentation": {}
+    },
+    {
+        "label": "parent",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.accessSpecifiers_&_modifiers.acessModifier",
+        "description": "Basic_Python.oops.accessSpecifiers_&_modifiers.acessModifier",
+        "peekOfCode": "class parent:\n    def public_method(self):\n            print(\"It's public method\")\n    def _protected_method(self):\n            print(\"It's protected method\")\n    def __private_method(self):\n            print(\"It's private method\")\n    def call_method(self):\n           self.public_method()\n           self._protected_method()",
+        "detail": "Basic_Python.oops.accessSpecifiers_&_modifiers.acessModifier",
+        "documentation": {}
+    },
+    {
+        "label": "child",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.accessSpecifiers_&_modifiers.acessModifier",
+        "description": "Basic_Python.oops.accessSpecifiers_&_modifiers.acessModifier",
+        "peekOfCode": "class child(parent):\n    def call_method_child(self):\n           self.public_method()\n           self._protected_method()\n           try:\n              self.__private_method()\n           except:\n              print(\"It's error\")\nclass stager:\n      def call_method_stager(self,obj):",
+        "detail": "Basic_Python.oops.accessSpecifiers_&_modifiers.acessModifier",
+        "documentation": {}
+    },
+    {
+        "label": "stager",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.accessSpecifiers_&_modifiers.acessModifier",
+        "description": "Basic_Python.oops.accessSpecifiers_&_modifiers.acessModifier",
+        "peekOfCode": "class stager:\n      def call_method_stager(self,obj):\n        print(obj)\n        obj.public_method()\n        obj._protected_method()\n        try:\n            obj.__private_method()\n        except:\n            print(\"It's error\")\np = parent()",
+        "detail": "Basic_Python.oops.accessSpecifiers_&_modifiers.acessModifier",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "Basic_Python.oops.accessSpecifiers_&_modifiers.acessModifier",
+        "description": "Basic_Python.oops.accessSpecifiers_&_modifiers.acessModifier",
+        "peekOfCode": "p = parent()\np.call_method()\nprint('\\n')\nc=child()\nc.call_method_child()\nprint('\\n')\ns= stager()\ns.call_method_stager(p)",
+        "detail": "Basic_Python.oops.accessSpecifiers_&_modifiers.acessModifier",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.class_&_object.class_&object",
+        "description": "Basic_Python.oops.class_&_object.class_&object",
+        "peekOfCode": "class Student:\n    def __init__(self,name,age): #Constructor\n        self.UserName = name # attribute\n        self.UserAge = age # attribute\n    def say_hell(self): #it's method\n        print(f\"My name is {self.UserName} and my age {self.UserAge}\")\ns1 = Student('Shankar',26) # s1 is obj\n'''\n#s1.say_hello(s1)\nwhat is this means when you call method(s1.say_hell()) it will send same obj as parameter to that method ",
+        "detail": "Basic_Python.oops.class_&_object.class_&object",
+        "documentation": {}
+    },
+    {
+        "label": "calculator",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.class_&_object.class_&object",
+        "description": "Basic_Python.oops.class_&_object.class_&object",
+        "peekOfCode": "class calculator:\n    def square(self,a): # method\n        return a*a\n    def cube(self,a): # method\n        return a*a*a\ntool = calculator() # tool is object\nprint(tool.square(2))\nprint(tool.cube(2))",
+        "detail": "Basic_Python.oops.class_&_object.class_&object",
+        "documentation": {}
+    },
+    {
+        "label": "s1",
+        "kind": 5,
+        "importPath": "Basic_Python.oops.class_&_object.class_&object",
+        "description": "Basic_Python.oops.class_&_object.class_&object",
+        "peekOfCode": "s1 = Student('Shankar',26) # s1 is obj\n'''\n#s1.say_hello(s1)\nwhat is this means when you call method(s1.say_hell()) it will send same obj as parameter to that method \nso that only we using self in parameter it's rule of python so that only python know which object (obj(s1)) \nis calling\n'''\ns1.say_hell() \ns2 = Student()\ns1.say_hell() ",
+        "detail": "Basic_Python.oops.class_&_object.class_&object",
+        "documentation": {}
+    },
+    {
+        "label": "s2",
+        "kind": 5,
+        "importPath": "Basic_Python.oops.class_&_object.class_&object",
+        "description": "Basic_Python.oops.class_&_object.class_&object",
+        "peekOfCode": "s2 = Student()\ns1.say_hell() \n# class without constructor\nclass calculator:\n    def square(self,a): # method\n        return a*a\n    def cube(self,a): # method\n        return a*a*a\ntool = calculator() # tool is object\nprint(tool.square(2))",
+        "detail": "Basic_Python.oops.class_&_object.class_&object",
+        "documentation": {}
+    },
+    {
+        "label": "tool",
+        "kind": 5,
+        "importPath": "Basic_Python.oops.class_&_object.class_&object",
+        "description": "Basic_Python.oops.class_&_object.class_&object",
+        "peekOfCode": "tool = calculator() # tool is object\nprint(tool.square(2))\nprint(tool.cube(2))",
+        "detail": "Basic_Python.oops.class_&_object.class_&object",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.encapsulation.encapsulation",
+        "description": "Basic_Python.oops.encapsulation.encapsulation",
+        "peekOfCode": "class Order:\n    def __init__(self,customer_name,items,total_amount,discount):\n        self.customer_name = customer_name\n        self.items = items\n        self.__total_amount = total_amount\n        self.__discount = discount\n    def __calculate_final(self):\n        return self.__total_amount - self.__discount\n    def _get_admin_view(self):\n        return {",
+        "detail": "Basic_Python.oops.encapsulation.encapsulation",
+        "documentation": {}
+    },
+    {
+        "label": "AdminPortal",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.encapsulation.encapsulation",
+        "description": "Basic_Python.oops.encapsulation.encapsulation",
+        "peekOfCode": "class AdminPortal:\n    def show_order(self,order):\n        return order._get_admin_view()\nclass CustomerPortal:\n    def show_order(self,order):\n        return order.get_customer_view()\norder = Order(\"Shankar\",[\"Pizza\",\"Pepsi\"],600,150)\nadmin = AdminPortal()\ncustomer= CustomerPortal()\nprint(admin.show_order(order))",
+        "detail": "Basic_Python.oops.encapsulation.encapsulation",
+        "documentation": {}
+    },
+    {
+        "label": "CustomerPortal",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.encapsulation.encapsulation",
+        "description": "Basic_Python.oops.encapsulation.encapsulation",
+        "peekOfCode": "class CustomerPortal:\n    def show_order(self,order):\n        return order.get_customer_view()\norder = Order(\"Shankar\",[\"Pizza\",\"Pepsi\"],600,150)\nadmin = AdminPortal()\ncustomer= CustomerPortal()\nprint(admin.show_order(order))\nprint(\"\\n\")\nprint(customer.show_order(order))",
+        "detail": "Basic_Python.oops.encapsulation.encapsulation",
+        "documentation": {}
+    },
+    {
+        "label": "order",
+        "kind": 5,
+        "importPath": "Basic_Python.oops.encapsulation.encapsulation",
+        "description": "Basic_Python.oops.encapsulation.encapsulation",
+        "peekOfCode": "order = Order(\"Shankar\",[\"Pizza\",\"Pepsi\"],600,150)\nadmin = AdminPortal()\ncustomer= CustomerPortal()\nprint(admin.show_order(order))\nprint(\"\\n\")\nprint(customer.show_order(order))",
+        "detail": "Basic_Python.oops.encapsulation.encapsulation",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "kind": 5,
+        "importPath": "Basic_Python.oops.encapsulation.encapsulation",
+        "description": "Basic_Python.oops.encapsulation.encapsulation",
+        "peekOfCode": "admin = AdminPortal()\ncustomer= CustomerPortal()\nprint(admin.show_order(order))\nprint(\"\\n\")\nprint(customer.show_order(order))",
+        "detail": "Basic_Python.oops.encapsulation.encapsulation",
+        "documentation": {}
+    },
+    {
+        "label": "parent",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.HierarchicalInheritance.HierarchicalInheritance",
+        "description": "Basic_Python.oops.inheritance.HierarchicalInheritance.HierarchicalInheritance",
+        "peekOfCode": "class parent:\n    def house(self):\n        print(\"Brown house\")\nclass son1(parent):\n    def factory(self):\n        print(\"Factory\")\nclass son2(parent):\n    def superMarket(self):\n        print(\"Super Market\")\n# super market not available for the first son but parent house will be available",
+        "detail": "Basic_Python.oops.inheritance.HierarchicalInheritance.HierarchicalInheritance",
+        "documentation": {}
+    },
+    {
+        "label": "son1",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.HierarchicalInheritance.HierarchicalInheritance",
+        "description": "Basic_Python.oops.inheritance.HierarchicalInheritance.HierarchicalInheritance",
+        "peekOfCode": "class son1(parent):\n    def factory(self):\n        print(\"Factory\")\nclass son2(parent):\n    def superMarket(self):\n        print(\"Super Market\")\n# super market not available for the first son but parent house will be available\nson_one = son1()\nson_one.house()\nson_one.factory()",
+        "detail": "Basic_Python.oops.inheritance.HierarchicalInheritance.HierarchicalInheritance",
+        "documentation": {}
+    },
+    {
+        "label": "son2",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.HierarchicalInheritance.HierarchicalInheritance",
+        "description": "Basic_Python.oops.inheritance.HierarchicalInheritance.HierarchicalInheritance",
+        "peekOfCode": "class son2(parent):\n    def superMarket(self):\n        print(\"Super Market\")\n# super market not available for the first son but parent house will be available\nson_one = son1()\nson_one.house()\nson_one.factory()\n# factory not available for the second son but parent house will be available\nsone_two = son2()\nsone_two.house()",
+        "detail": "Basic_Python.oops.inheritance.HierarchicalInheritance.HierarchicalInheritance",
+        "documentation": {}
+    },
+    {
+        "label": "son_one",
+        "kind": 5,
+        "importPath": "Basic_Python.oops.inheritance.HierarchicalInheritance.HierarchicalInheritance",
+        "description": "Basic_Python.oops.inheritance.HierarchicalInheritance.HierarchicalInheritance",
+        "peekOfCode": "son_one = son1()\nson_one.house()\nson_one.factory()\n# factory not available for the second son but parent house will be available\nsone_two = son2()\nsone_two.house()\nsone_two.superMarket()",
+        "detail": "Basic_Python.oops.inheritance.HierarchicalInheritance.HierarchicalInheritance",
+        "documentation": {}
+    },
+    {
+        "label": "sone_two",
+        "kind": 5,
+        "importPath": "Basic_Python.oops.inheritance.HierarchicalInheritance.HierarchicalInheritance",
+        "description": "Basic_Python.oops.inheritance.HierarchicalInheritance.HierarchicalInheritance",
+        "peekOfCode": "sone_two = son2()\nsone_two.house()\nsone_two.superMarket()",
+        "detail": "Basic_Python.oops.inheritance.HierarchicalInheritance.HierarchicalInheritance",
+        "documentation": {}
+    },
+    {
+        "label": "A",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.hybridInheritance.Hybrid inheritance",
+        "description": "Basic_Python.oops.inheritance.hybridInheritance.Hybrid inheritance",
+        "peekOfCode": "class A:\n    def featureA(self):\n        print(\"Feature A\")\n# Child class of A (Multilevel part)\nclass B(A):\n    def featureB(self):\n        print(\"Feature B\")\n# Another parent class\nclass C:\n    def featureC(self):",
+        "detail": "Basic_Python.oops.inheritance.hybridInheritance.Hybrid inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "B",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.hybridInheritance.Hybrid inheritance",
+        "description": "Basic_Python.oops.inheritance.hybridInheritance.Hybrid inheritance",
+        "peekOfCode": "class B(A):\n    def featureB(self):\n        print(\"Feature B\")\n# Another parent class\nclass C:\n    def featureC(self):\n        print(\"Feature C\")\n# Class D inherits from both B and C (Multiple inheritance part)\nclass D(B, C):\n    def featureD(self):",
+        "detail": "Basic_Python.oops.inheritance.hybridInheritance.Hybrid inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "C",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.hybridInheritance.Hybrid inheritance",
+        "description": "Basic_Python.oops.inheritance.hybridInheritance.Hybrid inheritance",
+        "peekOfCode": "class C:\n    def featureC(self):\n        print(\"Feature C\")\n# Class D inherits from both B and C (Multiple inheritance part)\nclass D(B, C):\n    def featureD(self):\n        print(\"Feature D\")\nobj = D()\nobj.featureA()\nobj.featureB()",
+        "detail": "Basic_Python.oops.inheritance.hybridInheritance.Hybrid inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "D",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.hybridInheritance.Hybrid inheritance",
+        "description": "Basic_Python.oops.inheritance.hybridInheritance.Hybrid inheritance",
+        "peekOfCode": "class D(B, C):\n    def featureD(self):\n        print(\"Feature D\")\nobj = D()\nobj.featureA()\nobj.featureB()\nobj.featureC()\nobj.featureD()",
+        "detail": "Basic_Python.oops.inheritance.hybridInheritance.Hybrid inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "Basic_Python.oops.inheritance.hybridInheritance.Hybrid inheritance",
+        "description": "Basic_Python.oops.inheritance.hybridInheritance.Hybrid inheritance",
+        "peekOfCode": "obj = D()\nobj.featureA()\nobj.featureB()\nobj.featureC()\nobj.featureD()",
+        "detail": "Basic_Python.oops.inheritance.hybridInheritance.Hybrid inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "grandfather",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.multiLevelInheritance.py.multiLevelInheritance",
+        "description": "Basic_Python.oops.inheritance.multiLevelInheritance.py.multiLevelInheritance",
+        "peekOfCode": "class grandfather:\n    def car(self):\n        print(\"Black car\")\nclass parent(grandfather):\n    def house(self):\n        print(\"Brown house\")\nclass son(parent):\n    def factory(self):\n        print(\"I have factory\")\nproperty = son()",
+        "detail": "Basic_Python.oops.inheritance.multiLevelInheritance.py.multiLevelInheritance",
+        "documentation": {}
+    },
+    {
+        "label": "parent",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.multiLevelInheritance.py.multiLevelInheritance",
+        "description": "Basic_Python.oops.inheritance.multiLevelInheritance.py.multiLevelInheritance",
+        "peekOfCode": "class parent(grandfather):\n    def house(self):\n        print(\"Brown house\")\nclass son(parent):\n    def factory(self):\n        print(\"I have factory\")\nproperty = son()\nproperty.car()\nproperty.factory()\nproperty.house()",
+        "detail": "Basic_Python.oops.inheritance.multiLevelInheritance.py.multiLevelInheritance",
+        "documentation": {}
+    },
+    {
+        "label": "son",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.multiLevelInheritance.py.multiLevelInheritance",
+        "description": "Basic_Python.oops.inheritance.multiLevelInheritance.py.multiLevelInheritance",
+        "peekOfCode": "class son(parent):\n    def factory(self):\n        print(\"I have factory\")\nproperty = son()\nproperty.car()\nproperty.factory()\nproperty.house()",
+        "detail": "Basic_Python.oops.inheritance.multiLevelInheritance.py.multiLevelInheritance",
+        "documentation": {}
+    },
+    {
+        "label": "property",
+        "kind": 5,
+        "importPath": "Basic_Python.oops.inheritance.multiLevelInheritance.py.multiLevelInheritance",
+        "description": "Basic_Python.oops.inheritance.multiLevelInheritance.py.multiLevelInheritance",
+        "peekOfCode": "property = son()\nproperty.car()\nproperty.factory()\nproperty.house()",
+        "detail": "Basic_Python.oops.inheritance.multiLevelInheritance.py.multiLevelInheritance",
+        "documentation": {}
+    },
+    {
+        "label": "dad",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.multipleInheritance.multipleInheritance",
+        "description": "Basic_Python.oops.inheritance.multipleInheritance.multipleInheritance",
+        "peekOfCode": "class dad:\n    def car(self):\n        print(\"Black Car\")\nclass mom:\n    def shop(self):\n        print(\"Shop\")\nclass daughter(dad,mom):\n    def house(self):\n        print(\"house\")\nobj1 =daughter()",
+        "detail": "Basic_Python.oops.inheritance.multipleInheritance.multipleInheritance",
+        "documentation": {}
+    },
+    {
+        "label": "mom",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.multipleInheritance.multipleInheritance",
+        "description": "Basic_Python.oops.inheritance.multipleInheritance.multipleInheritance",
+        "peekOfCode": "class mom:\n    def shop(self):\n        print(\"Shop\")\nclass daughter(dad,mom):\n    def house(self):\n        print(\"house\")\nobj1 =daughter()\nobj1.car()\nobj1.shop()",
+        "detail": "Basic_Python.oops.inheritance.multipleInheritance.multipleInheritance",
+        "documentation": {}
+    },
+    {
+        "label": "daughter",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.multipleInheritance.multipleInheritance",
+        "description": "Basic_Python.oops.inheritance.multipleInheritance.multipleInheritance",
+        "peekOfCode": "class daughter(dad,mom):\n    def house(self):\n        print(\"house\")\nobj1 =daughter()\nobj1.car()\nobj1.shop()",
+        "detail": "Basic_Python.oops.inheritance.multipleInheritance.multipleInheritance",
+        "documentation": {}
+    },
+    {
+        "label": "dad",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "description": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "peekOfCode": "class dad:\n    def house(self):\n        print(\"I am from dad class\")\nclass son(dad):\n    def factory(self):\n        print(\"I am from factory class\")\nd=dad()\nd.house()\ns=son()\ns.house()",
+        "detail": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "son",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "description": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "peekOfCode": "class son(dad):\n    def factory(self):\n        print(\"I am from factory class\")\nd=dad()\nd.house()\ns=son()\ns.house()\ns.factory()\n# Create App with Single level inheritance\nclass app: # parent",
+        "detail": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "description": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "peekOfCode": "class app: # parent\n    def v1(self):\n        print(\"orders\")\nclass appV2(app): # child\n    def v2(self):\n        print(\"Refund\")\naUpdate = appV2()\naUpdate.v1()\naUpdate.v2()\n# overriding",
+        "detail": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "appV2",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "description": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "peekOfCode": "class appV2(app): # child\n    def v2(self):\n        print(\"Refund\")\naUpdate = appV2()\naUpdate.v1()\naUpdate.v2()\n# overriding\nclass daddy: #parent\n    def house(self):\n        print(\"White color house\")",
+        "detail": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "daddy",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "description": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "peekOfCode": "class daddy: #parent\n    def house(self):\n        print(\"White color house\")\nclass daughter(daddy): # child\n    def house(self): # this method overriding parent method\n            print(\"Brown color house\")\n    def factory(self):\n            print(\"Factory\")\nproperties = daughter()\nproperties.house()",
+        "detail": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "daughter",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "description": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "peekOfCode": "class daughter(daddy): # child\n    def house(self): # this method overriding parent method\n            print(\"Brown color house\")\n    def factory(self):\n            print(\"Factory\")\nproperties = daughter()\nproperties.house()\nproperties.factory()",
+        "detail": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "aUpdate",
+        "kind": 5,
+        "importPath": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "description": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "peekOfCode": "aUpdate = appV2()\naUpdate.v1()\naUpdate.v2()\n# overriding\nclass daddy: #parent\n    def house(self):\n        print(\"White color house\")\nclass daughter(daddy): # child\n    def house(self): # this method overriding parent method\n            print(\"Brown color house\")",
+        "detail": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "properties",
+        "kind": 5,
+        "importPath": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "description": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "peekOfCode": "properties = daughter()\nproperties.house()\nproperties.factory()",
+        "detail": "Basic_Python.oops.inheritance.singleInheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "son",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.inheritance.singleInheritance.test",
+        "description": "Basic_Python.oops.inheritance.singleInheritance.test",
+        "peekOfCode": "class son(dad):\n    def home(self):\n        print('house color is red')\ntest = son()\ntest.home()",
+        "detail": "Basic_Python.oops.inheritance.singleInheritance.test",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "kind": 5,
+        "importPath": "Basic_Python.oops.inheritance.singleInheritance.test",
+        "description": "Basic_Python.oops.inheritance.singleInheritance.test",
+        "peekOfCode": "test = son()\ntest.home()",
+        "detail": "Basic_Python.oops.inheritance.singleInheritance.test",
+        "documentation": {}
+    },
+    {
+        "label": "daddy",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.polymorphism.polymorphism",
+        "description": "Basic_Python.oops.polymorphism.polymorphism",
+        "peekOfCode": "class daddy: #parent\n    def house(self):\n        print(\"White color house\")\nclass daughter(daddy): # child\n    def house(self): # this method overriding parent method\n            print(\"Brown color house\")\n    def factory(self):\n            print(\"Factory\")\nproperties = daughter()\nproperties.house()",
+        "detail": "Basic_Python.oops.polymorphism.polymorphism",
+        "documentation": {}
+    },
+    {
+        "label": "daughter",
+        "kind": 6,
+        "importPath": "Basic_Python.oops.polymorphism.polymorphism",
+        "description": "Basic_Python.oops.polymorphism.polymorphism",
+        "peekOfCode": "class daughter(daddy): # child\n    def house(self): # this method overriding parent method\n            print(\"Brown color house\")\n    def factory(self):\n            print(\"Factory\")\nproperties = daughter()\nproperties.house()\nproperties.factory()",
+        "detail": "Basic_Python.oops.polymorphism.polymorphism",
+        "documentation": {}
+    },
+    {
+        "label": "properties",
+        "kind": 5,
+        "importPath": "Basic_Python.oops.polymorphism.polymorphism",
+        "description": "Basic_Python.oops.polymorphism.polymorphism",
+        "peekOfCode": "properties = daughter()\nproperties.house()\nproperties.factory()",
+        "detail": "Basic_Python.oops.polymorphism.polymorphism",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "Basic_Python.string.string",
+        "description": "Basic_Python.string.string",
+        "peekOfCode": "name = 'Shankar chandran'\nsmallWord = name.lower()\nprint(name.lower())      # shankar  chandran\nprint(name.upper())      # SHANKAR CHANDRAN\nprint(smallWord.capitalize())  # Shankar chandran\nprint(smallWord.title())       # Shankar Chandran\nphoneNumber = '9952170125'\nfirstTwo = phoneNumber[:2]\nlastTwo = phoneNumber[-2:]\nprint(firstTwo+ '******' + lastTwo)  # 99******25",
+        "detail": "Basic_Python.string.string",
+        "documentation": {}
+    },
+    {
+        "label": "smallWord",
+        "kind": 5,
+        "importPath": "Basic_Python.string.string",
+        "description": "Basic_Python.string.string",
+        "peekOfCode": "smallWord = name.lower()\nprint(name.lower())      # shankar  chandran\nprint(name.upper())      # SHANKAR CHANDRAN\nprint(smallWord.capitalize())  # Shankar chandran\nprint(smallWord.title())       # Shankar Chandran\nphoneNumber = '9952170125'\nfirstTwo = phoneNumber[:2]\nlastTwo = phoneNumber[-2:]\nprint(firstTwo+ '******' + lastTwo)  # 99******25\n#Replace",
+        "detail": "Basic_Python.string.string",
+        "documentation": {}
+    },
+    {
+        "label": "phoneNumber",
+        "kind": 5,
+        "importPath": "Basic_Python.string.string",
+        "description": "Basic_Python.string.string",
+        "peekOfCode": "phoneNumber = '9952170125'\nfirstTwo = phoneNumber[:2]\nlastTwo = phoneNumber[-2:]\nprint(firstTwo+ '******' + lastTwo)  # 99******25\n#Replace\nlocation = 'chennai'\nnewLocation = location.replace('chennai', 'bangalore')\nprint(newLocation)  # bangalore\n# Split\nmessage = \"your uber booking: UBER1234 has been confirmed\"",
+        "detail": "Basic_Python.string.string",
+        "documentation": {}
+    },
+    {
+        "label": "firstTwo",
+        "kind": 5,
+        "importPath": "Basic_Python.string.string",
+        "description": "Basic_Python.string.string",
+        "peekOfCode": "firstTwo = phoneNumber[:2]\nlastTwo = phoneNumber[-2:]\nprint(firstTwo+ '******' + lastTwo)  # 99******25\n#Replace\nlocation = 'chennai'\nnewLocation = location.replace('chennai', 'bangalore')\nprint(newLocation)  # bangalore\n# Split\nmessage = \"your uber booking: UBER1234 has been confirmed\"\nbookingID = message.split(':')[1].split()[0]",
+        "detail": "Basic_Python.string.string",
+        "documentation": {}
+    },
+    {
+        "label": "lastTwo",
+        "kind": 5,
+        "importPath": "Basic_Python.string.string",
+        "description": "Basic_Python.string.string",
+        "peekOfCode": "lastTwo = phoneNumber[-2:]\nprint(firstTwo+ '******' + lastTwo)  # 99******25\n#Replace\nlocation = 'chennai'\nnewLocation = location.replace('chennai', 'bangalore')\nprint(newLocation)  # bangalore\n# Split\nmessage = \"your uber booking: UBER1234 has been confirmed\"\nbookingID = message.split(':')[1].split()[0]\nprint(bookingID)  # UBER1234",
+        "detail": "Basic_Python.string.string",
+        "documentation": {}
+    },
+    {
+        "label": "location",
+        "kind": 5,
+        "importPath": "Basic_Python.string.string",
+        "description": "Basic_Python.string.string",
+        "peekOfCode": "location = 'chennai'\nnewLocation = location.replace('chennai', 'bangalore')\nprint(newLocation)  # bangalore\n# Split\nmessage = \"your uber booking: UBER1234 has been confirmed\"\nbookingID = message.split(':')[1].split()[0]\nprint(bookingID)  # UBER1234\n# Search Value in String\npromo = \"Use code SAVE20 to get 20% off on your next ride\"\nif 'SAVE20' in promo:",
+        "detail": "Basic_Python.string.string",
+        "documentation": {}
+    },
+    {
+        "label": "newLocation",
+        "kind": 5,
+        "importPath": "Basic_Python.string.string",
+        "description": "Basic_Python.string.string",
+        "peekOfCode": "newLocation = location.replace('chennai', 'bangalore')\nprint(newLocation)  # bangalore\n# Split\nmessage = \"your uber booking: UBER1234 has been confirmed\"\nbookingID = message.split(':')[1].split()[0]\nprint(bookingID)  # UBER1234\n# Search Value in String\npromo = \"Use code SAVE20 to get 20% off on your next ride\"\nif 'SAVE20' in promo:\n    print(\"Promo code is valid!\")  # Promo code is valid!",
+        "detail": "Basic_Python.string.string",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "Basic_Python.string.string",
+        "description": "Basic_Python.string.string",
+        "peekOfCode": "message = \"your uber booking: UBER1234 has been confirmed\"\nbookingID = message.split(':')[1].split()[0]\nprint(bookingID)  # UBER1234\n# Search Value in String\npromo = \"Use code SAVE20 to get 20% off on your next ride\"\nif 'SAVE20' in promo:\n    print(\"Promo code is valid!\")  # Promo code is valid!\n#Find Position\nfeedBack = \"The driver was very friendly and punctual\"\nposition = feedBack.find('friendly')",
+        "detail": "Basic_Python.string.string",
+        "documentation": {}
+    },
+    {
+        "label": "bookingID",
+        "kind": 5,
+        "importPath": "Basic_Python.string.string",
+        "description": "Basic_Python.string.string",
+        "peekOfCode": "bookingID = message.split(':')[1].split()[0]\nprint(bookingID)  # UBER1234\n# Search Value in String\npromo = \"Use code SAVE20 to get 20% off on your next ride\"\nif 'SAVE20' in promo:\n    print(\"Promo code is valid!\")  # Promo code is valid!\n#Find Position\nfeedBack = \"The driver was very friendly and punctual\"\nposition = feedBack.find('friendly')\nprint(position)  # 16",
+        "detail": "Basic_Python.string.string",
+        "documentation": {}
+    },
+    {
+        "label": "promo",
+        "kind": 5,
+        "importPath": "Basic_Python.string.string",
+        "description": "Basic_Python.string.string",
+        "peekOfCode": "promo = \"Use code SAVE20 to get 20% off on your next ride\"\nif 'SAVE20' in promo:\n    print(\"Promo code is valid!\")  # Promo code is valid!\n#Find Position\nfeedBack = \"The driver was very friendly and punctual\"\nposition = feedBack.find('friendly')\nprint(position)  # 16\n# take first name first letter and last name first letter and make it uppercase\nname = \" Shankar Chandran  \"\n# with list comprehension",
+        "detail": "Basic_Python.string.string",
+        "documentation": {}
+    },
+    {
+        "label": "feedBack",
+        "kind": 5,
+        "importPath": "Basic_Python.string.string",
+        "description": "Basic_Python.string.string",
+        "peekOfCode": "feedBack = \"The driver was very friendly and punctual\"\nposition = feedBack.find('friendly')\nprint(position)  # 16\n# take first name first letter and last name first letter and make it uppercase\nname = \" Shankar Chandran  \"\n# with list comprehension\nprint([word[0].upper() for word in name.split()])  # [logic first , for in loop second]\n# without list comprehension\nprint(\" \".join([word[0].upper() for word in name.split()]))  # [logic first , for in loop second]\n# Remove White space from the beginning and end of the string",
+        "detail": "Basic_Python.string.string",
+        "documentation": {}
+    },
+    {
+        "label": "position",
+        "kind": 5,
+        "importPath": "Basic_Python.string.string",
+        "description": "Basic_Python.string.string",
+        "peekOfCode": "position = feedBack.find('friendly')\nprint(position)  # 16\n# take first name first letter and last name first letter and make it uppercase\nname = \" Shankar Chandran  \"\n# with list comprehension\nprint([word[0].upper() for word in name.split()])  # [logic first , for in loop second]\n# without list comprehension\nprint(\" \".join([word[0].upper() for word in name.split()]))  # [logic first , for in loop second]\n# Remove White space from the beginning and end of the string\nprint(name.strip())  # \"Shankar Chandran\"",
+        "detail": "Basic_Python.string.string",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "Basic_Python.string.string",
+        "description": "Basic_Python.string.string",
+        "peekOfCode": "name = \" Shankar Chandran  \"\n# with list comprehension\nprint([word[0].upper() for word in name.split()])  # [logic first , for in loop second]\n# without list comprehension\nprint(\" \".join([word[0].upper() for word in name.split()]))  # [logic first , for in loop second]\n# Remove White space from the beginning and end of the string\nprint(name.strip())  # \"Shankar Chandran\"\n# Words Count in a String\nsentence = \"The quick brown fox jumps over the lazy dog\"\nword_count = len(sentence.split())",
+        "detail": "Basic_Python.string.string",
+        "documentation": {}
+    },
+    {
+        "label": "sentence",
+        "kind": 5,
+        "importPath": "Basic_Python.string.string",
+        "description": "Basic_Python.string.string",
+        "peekOfCode": "sentence = \"The quick brown fox jumps over the lazy dog\"\nword_count = len(sentence.split())\nprint(word_count)  # 9",
+        "detail": "Basic_Python.string.string",
+        "documentation": {}
+    },
+    {
+        "label": "word_count",
+        "kind": 5,
+        "importPath": "Basic_Python.string.string",
+        "description": "Basic_Python.string.string",
+        "peekOfCode": "word_count = len(sentence.split())\nprint(word_count)  # 9",
+        "detail": "Basic_Python.string.string",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "Basic_Python.Ternary_Operator.Ternary_Operator",
+        "description": "Basic_Python.Ternary_Operator.Ternary_Operator",
+        "peekOfCode": "age = 20\nstatus = \"Adult\" if age >= 18 else \"Minor\"\nprint(status)",
+        "detail": "Basic_Python.Ternary_Operator.Ternary_Operator",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "kind": 5,
+        "importPath": "Basic_Python.Ternary_Operator.Ternary_Operator",
+        "description": "Basic_Python.Ternary_Operator.Ternary_Operator",
+        "peekOfCode": "status = \"Adult\" if age >= 18 else \"Minor\"\nprint(status)",
+        "detail": "Basic_Python.Ternary_Operator.Ternary_Operator",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "kind": 2,
+        "importPath": "Basic_Python.testpy.program",
+        "description": "Basic_Python.testpy.program",
+        "peekOfCode": "def divide(a,b):\n    try:\n        return a/b\n    except ZeroDivisionError:\n        print(\"With Zero can't divide\")",
+        "detail": "Basic_Python.testpy.program",
+        "documentation": {}
+    },
+    {
+        "label": "testDivide",
+        "kind": 2,
+        "importPath": "Basic_Python.testpy.testpy",
+        "description": "Basic_Python.testpy.testpy",
+        "peekOfCode": "def testDivide():\n    assert divide(1,2) == 0.5\ntestDivide()",
+        "detail": "Basic_Python.testpy.testpy",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "Basic_Python.hello",
+        "description": "Basic_Python.hello",
+        "peekOfCode": "age = 26\nprint(age,type(age)) # it's int type\nprice = 19.99\nprint(price,type(price)) # it's float type\nname = \"Shankar\"\nprint(name,type(name)) # it's str type\nis_student = True\nprint(is_student,type(is_student)) # it's bool type\naddress = None\nprint(address,type(address)) # it's NoneType type",
+        "detail": "Basic_Python.hello",
+        "documentation": {}
+    },
+    {
+        "label": "price",
+        "kind": 5,
+        "importPath": "Basic_Python.hello",
+        "description": "Basic_Python.hello",
+        "peekOfCode": "price = 19.99\nprint(price,type(price)) # it's float type\nname = \"Shankar\"\nprint(name,type(name)) # it's str type\nis_student = True\nprint(is_student,type(is_student)) # it's bool type\naddress = None\nprint(address,type(address)) # it's NoneType type",
+        "detail": "Basic_Python.hello",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "Basic_Python.hello",
+        "description": "Basic_Python.hello",
+        "peekOfCode": "name = \"Shankar\"\nprint(name,type(name)) # it's str type\nis_student = True\nprint(is_student,type(is_student)) # it's bool type\naddress = None\nprint(address,type(address)) # it's NoneType type",
+        "detail": "Basic_Python.hello",
+        "documentation": {}
+    },
+    {
+        "label": "is_student",
+        "kind": 5,
+        "importPath": "Basic_Python.hello",
+        "description": "Basic_Python.hello",
+        "peekOfCode": "is_student = True\nprint(is_student,type(is_student)) # it's bool type\naddress = None\nprint(address,type(address)) # it's NoneType type",
+        "detail": "Basic_Python.hello",
+        "documentation": {}
+    },
+    {
+        "label": "address",
+        "kind": 5,
+        "importPath": "Basic_Python.hello",
+        "description": "Basic_Python.hello",
+        "peekOfCode": "address = None\nprint(address,type(address)) # it's NoneType type",
+        "detail": "Basic_Python.hello",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "Basic_Python.if_Elif_else",
+        "description": "Basic_Python.if_Elif_else",
+        "peekOfCode": "age = 30\nif age < 18:\n    print(\"You are a minor.\")\nif age < 18:\n    print(\"You are a minor.\")\nelif age >= 18 and age < 65:\n    print(\"You are an adult.\")\nelse:\n    print(\"You are a senior citizen.\")\nrecharge_amount =  200",
+        "detail": "Basic_Python.if_Elif_else",
+        "documentation": {}
+    },
+    {
+        "label": "recharge_amount",
+        "kind": 5,
+        "importPath": "Basic_Python.if_Elif_else",
+        "description": "Basic_Python.if_Elif_else",
+        "peekOfCode": "recharge_amount =  200\ndata_balance = 1.5\nif recharge_amount >= 399 or data_balance >= 1:\n    print(\"You are eligible for a free movie ticket.\")\nelse:\n    print(\"You are not eligible for a free movie ticket.\")\norder_amount = 1500\nday = \"sat\"\nmemberShip_status = \"gold\"\nif order_amount >= 1000 and day in [\"sat\", \"sun\"] or memberShip_status == \"gold\":",
+        "detail": "Basic_Python.if_Elif_else",
+        "documentation": {}
+    },
+    {
+        "label": "data_balance",
+        "kind": 5,
+        "importPath": "Basic_Python.if_Elif_else",
+        "description": "Basic_Python.if_Elif_else",
+        "peekOfCode": "data_balance = 1.5\nif recharge_amount >= 399 or data_balance >= 1:\n    print(\"You are eligible for a free movie ticket.\")\nelse:\n    print(\"You are not eligible for a free movie ticket.\")\norder_amount = 1500\nday = \"sat\"\nmemberShip_status = \"gold\"\nif order_amount >= 1000 and day in [\"sat\", \"sun\"] or memberShip_status == \"gold\":\n    print(\"You get a 20% discount on your order.\")  ",
+        "detail": "Basic_Python.if_Elif_else",
+        "documentation": {}
+    },
+    {
+        "label": "order_amount",
+        "kind": 5,
+        "importPath": "Basic_Python.if_Elif_else",
+        "description": "Basic_Python.if_Elif_else",
+        "peekOfCode": "order_amount = 1500\nday = \"sat\"\nmemberShip_status = \"gold\"\nif order_amount >= 1000 and day in [\"sat\", \"sun\"] or memberShip_status == \"gold\":\n    print(\"You get a 20% discount on your order.\")  \nelse:\n    print(\"No discount applicable on your order.\")",
+        "detail": "Basic_Python.if_Elif_else",
+        "documentation": {}
+    },
+    {
+        "label": "day",
+        "kind": 5,
+        "importPath": "Basic_Python.if_Elif_else",
+        "description": "Basic_Python.if_Elif_else",
+        "peekOfCode": "day = \"sat\"\nmemberShip_status = \"gold\"\nif order_amount >= 1000 and day in [\"sat\", \"sun\"] or memberShip_status == \"gold\":\n    print(\"You get a 20% discount on your order.\")  \nelse:\n    print(\"No discount applicable on your order.\")",
+        "detail": "Basic_Python.if_Elif_else",
+        "documentation": {}
+    },
+    {
+        "label": "memberShip_status",
+        "kind": 5,
+        "importPath": "Basic_Python.if_Elif_else",
+        "description": "Basic_Python.if_Elif_else",
+        "peekOfCode": "memberShip_status = \"gold\"\nif order_amount >= 1000 and day in [\"sat\", \"sun\"] or memberShip_status == \"gold\":\n    print(\"You get a 20% discount on your order.\")  \nelse:\n    print(\"No discount applicable on your order.\")",
+        "detail": "Basic_Python.if_Elif_else",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "Basic_Python.operator",
+        "description": "Basic_Python.operator",
+        "peekOfCode": "a = 10\nb=5\nprint(a+b)  # output:20\nprint(a/b)  # output:1.0\nprint(a%b)  # output:0\nprint(a-b)  # output:0\nprint(a*b)  # output:100\nprint(a**b)  # output:100000 Step: 10 raised to power 5\nprint(a//b)  # output:1 Step: Floor division (removes decimal part)\n# Comparison Operators",
+        "detail": "Basic_Python.operator",
+        "documentation": {}
+    },
+    {
+        "label": "amount",
+        "kind": 5,
+        "importPath": "Basic_Python.operator",
+        "description": "Basic_Python.operator",
+        "peekOfCode": "amount = 1200\ntax = amount*0.18\ntotal_amount = amount + tax\nif(total_amount > 1000):\n    discount = total_amount * 0.10\n    total_amount -= discount\nprint(\"Total amount to be paid:\", total_amount)\n#Task 2:>\nage = 19\nstudent = 'yes'",
+        "detail": "Basic_Python.operator",
+        "documentation": {}
+    },
+    {
+        "label": "tax",
+        "kind": 5,
+        "importPath": "Basic_Python.operator",
+        "description": "Basic_Python.operator",
+        "peekOfCode": "tax = amount*0.18\ntotal_amount = amount + tax\nif(total_amount > 1000):\n    discount = total_amount * 0.10\n    total_amount -= discount\nprint(\"Total amount to be paid:\", total_amount)\n#Task 2:>\nage = 19\nstudent = 'yes'\namount_ticket = 250",
+        "detail": "Basic_Python.operator",
+        "documentation": {}
+    },
+    {
+        "label": "total_amount",
+        "kind": 5,
+        "importPath": "Basic_Python.operator",
+        "description": "Basic_Python.operator",
+        "peekOfCode": "total_amount = amount + tax\nif(total_amount > 1000):\n    discount = total_amount * 0.10\n    total_amount -= discount\nprint(\"Total amount to be paid:\", total_amount)\n#Task 2:>\nage = 19\nstudent = 'yes'\namount_ticket = 250\nif age >= 60 or student.lower() == 'yes':",
+        "detail": "Basic_Python.operator",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "Basic_Python.operator",
+        "description": "Basic_Python.operator",
+        "peekOfCode": "age = 19\nstudent = 'yes'\namount_ticket = 250\nif age >= 60 or student.lower() == 'yes':\n    discount = amount_ticket * 0.15\n    amount_ticket -= discount\nprint(\"Amount to be paid for ticket:\", amount_ticket)",
+        "detail": "Basic_Python.operator",
+        "documentation": {}
+    },
+    {
+        "label": "student",
+        "kind": 5,
+        "importPath": "Basic_Python.operator",
+        "description": "Basic_Python.operator",
+        "peekOfCode": "student = 'yes'\namount_ticket = 250\nif age >= 60 or student.lower() == 'yes':\n    discount = amount_ticket * 0.15\n    amount_ticket -= discount\nprint(\"Amount to be paid for ticket:\", amount_ticket)",
+        "detail": "Basic_Python.operator",
+        "documentation": {}
+    },
+    {
+        "label": "amount_ticket",
+        "kind": 5,
+        "importPath": "Basic_Python.operator",
+        "description": "Basic_Python.operator",
+        "peekOfCode": "amount_ticket = 250\nif age >= 60 or student.lower() == 'yes':\n    discount = amount_ticket * 0.15\n    amount_ticket -= discount\nprint(\"Amount to be paid for ticket:\", amount_ticket)",
+        "detail": "Basic_Python.operator",
+        "documentation": {}
+    },
+    {
+        "label": "order",
+        "kind": 2,
+        "importPath": "Basic_Python.scope",
+        "description": "Basic_Python.scope",
+        "peekOfCode": "def order():\n    food = \"burger\"  \n    print(\"I ordered a\", food)\norder()\n# print(food) it's show error NameError: name 'food' is not defined because food is in local scope \n# E(Enclosing Scope) \ndef outer_function():\n    outer_var = \"Hello\"\n    def inner_function():\n        inner_var = \"World\"",
+        "detail": "Basic_Python.scope",
+        "documentation": {}
+    },
+    {
+        "label": "outer_function",
+        "kind": 2,
+        "importPath": "Basic_Python.scope",
+        "description": "Basic_Python.scope",
+        "peekOfCode": "def outer_function():\n    outer_var = \"Hello\"\n    def inner_function():\n        inner_var = \"World\"\n        # outer_var is in enclosing scope of inner_function\n        print(outer_var,inner_var)  # Accessing variable from enclosing scope\n    inner_function()\nouter_function()\n# B(Built-in Scope)\nprint(__file__) # prints the path of the current file",
+        "detail": "Basic_Python.scope",
+        "documentation": {}
+    },
+    {
+        "label": "hotel",
+        "kind": 2,
+        "importPath": "Basic_Python.scope",
+        "description": "Basic_Python.scope",
+        "peekOfCode": "def hotel():\n    food_item = \"Pizza\" # Example of Enclosing Scope\n    def deliver():\n        quantity = 2 # Example of Local Scope\n        print(f\"Delivering {quantity} {food_item} via {delivery_partner}\")\n    deliver()\nhotel()",
+        "detail": "Basic_Python.scope",
+        "documentation": {}
+    },
+    {
+        "label": "delivery_partner",
+        "kind": 5,
+        "importPath": "Basic_Python.scope",
+        "description": "Basic_Python.scope",
+        "peekOfCode": "delivery_partner = \"Swiggy\" # Example of Global Scope\ndef hotel():\n    food_item = \"Pizza\" # Example of Enclosing Scope\n    def deliver():\n        quantity = 2 # Example of Local Scope\n        print(f\"Delivering {quantity} {food_item} via {delivery_partner}\")\n    deliver()\nhotel()",
+        "detail": "Basic_Python.scope",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pandas.file_test",
+        "description": "pandas.file_test",
+        "peekOfCode": "df = pd.read_csv('employees_details.csv')\ndf.to_csv('output_employee.csv',index=False)\ndf['name'].to_csv(\"name.csv\")\ndf[['name', 'department']].to_csv('name_department.csv')",
+        "detail": "pandas.file_test",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pandas.test_pandas",
+        "description": "pandas.test_pandas",
+        "peekOfCode": "df = pd.DataFrame(data) # we want to change dataFrame all the time after that only we can use it\nprint(df)\nprint(df['Name'])",
+        "detail": "pandas.test_pandas",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "Streamlit.streamlitTest",
+        "description": "Streamlit.streamlitTest",
+        "peekOfCode": "age = st.slider(\"Select you age\",1,100,25)\nst.write(\"you selected:\",age)",
+        "detail": "Streamlit.streamlitTest",
+        "documentation": {}
+    }
+]

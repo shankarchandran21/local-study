@@ -1,0 +1,19 @@
+  {% extends 'blog/base.html' %}
+
+  {% block content %}
+  <div class="container-fluid ">
+        <h3>About Us</h3>
+        <div class="d-flex gap-3 justify-content-center mt-5">
+            <img src="https://picsum.photos/300/300" alt="">
+            {% if content %}
+                <div class="content">
+                    {{ content }}
+                </div>
+            {% else %}
+                <div class="alert alert-info" role="alert">
+                    No content available.
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endblock %}

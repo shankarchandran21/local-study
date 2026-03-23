@@ -1,0 +1,947 @@
+[
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Cookie",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Mapped",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "OAuth2PasswordRequestForm",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "OAuth2PasswordBearer",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordHash",
+        "importPath": "pwdlib",
+        "description": "pwdlib",
+        "isExtraImport": true,
+        "detail": "pwdlib",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi.params",
+        "description": "fastapi.params",
+        "isExtraImport": true,
+        "detail": "fastapi.params",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "jwt",
+        "description": "jwt",
+        "detail": "jwt",
+        "documentation": {}
+    },
+    {
+        "label": "uvicorn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uvicorn",
+        "description": "uvicorn",
+        "detail": "uvicorn",
+        "documentation": {}
+    },
+    {
+        "label": "get_blogs",
+        "kind": 2,
+        "importPath": "src.blog.controller.blogs",
+        "description": "src.blog.controller.blogs",
+        "peekOfCode": "def get_blogs(db:Session=Depends(database.get_db)):\n    blog = db.query(models.Blog).all()\n    return blog\ndef create_blog(post:schemas.Blog,db:Session=Depends(database.get_db),current_user:schemas.User=Depends(get_current_user)):\n    new_blog = models.Blog(title=post.title,body=post.body,user_id=current_user.id)\n    db.add(new_blog)\n    db.commit()\n    db.refresh(new_blog)\n    return new_blog\ndef get_blog_by_id(id:int,response:Response,db:Session=Depends(database.get_db)):",
+        "detail": "src.blog.controller.blogs",
+        "documentation": {}
+    },
+    {
+        "label": "create_blog",
+        "kind": 2,
+        "importPath": "src.blog.controller.blogs",
+        "description": "src.blog.controller.blogs",
+        "peekOfCode": "def create_blog(post:schemas.Blog,db:Session=Depends(database.get_db),current_user:schemas.User=Depends(get_current_user)):\n    new_blog = models.Blog(title=post.title,body=post.body,user_id=current_user.id)\n    db.add(new_blog)\n    db.commit()\n    db.refresh(new_blog)\n    return new_blog\ndef get_blog_by_id(id:int,response:Response,db:Session=Depends(database.get_db)):\n    get_blog = db.query(models.Blog).filter(models.Blog.id == id).first()\n    if not get_blog:\n        # response.status_code = status.HTTP_404_NOT_FOUND",
+        "detail": "src.blog.controller.blogs",
+        "documentation": {}
+    },
+    {
+        "label": "get_blog_by_id",
+        "kind": 2,
+        "importPath": "src.blog.controller.blogs",
+        "description": "src.blog.controller.blogs",
+        "peekOfCode": "def get_blog_by_id(id:int,response:Response,db:Session=Depends(database.get_db)):\n    get_blog = db.query(models.Blog).filter(models.Blog.id == id).first()\n    if not get_blog:\n        # response.status_code = status.HTTP_404_NOT_FOUND\n        # return {\"details\":f\"Blog with {id} is not available\"}\n        # We can use this without using above two line\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail=f\"Blog with {id} is not available\")\n    return get_blog\ndef delete_blog_by_id(id:int,db:Session=Depends(database.get_db)):\n    #synchronize_session have 3 values false,evaluate,fetch",
+        "detail": "src.blog.controller.blogs",
+        "documentation": {}
+    },
+    {
+        "label": "delete_blog_by_id",
+        "kind": 2,
+        "importPath": "src.blog.controller.blogs",
+        "description": "src.blog.controller.blogs",
+        "peekOfCode": "def delete_blog_by_id(id:int,db:Session=Depends(database.get_db)):\n    #synchronize_session have 3 values false,evaluate,fetch\n    # false no sync orm object with db it's faster\n    # fetch sync orm object with db\n    #evaluate seeing python logic and execute\n    # orm object means db giving data(delete_post) that is orm object\n    delete_post = db.query(models.Blog).filter(models.Blog.id == id)\n    if not delete_post:\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail=f\"Blog with {id} is not available\")\n    delete_post.delete(synchronize_session=False)",
+        "detail": "src.blog.controller.blogs",
+        "documentation": {}
+    },
+    {
+        "label": "edit_blog",
+        "kind": 2,
+        "importPath": "src.blog.controller.blogs",
+        "description": "src.blog.controller.blogs",
+        "peekOfCode": "def edit_blog(id:int,request:schemas.Blog,db:Session=Depends(database.get_db)):\n    update_blog_single = db.query(models.Blog).filter(models.Blog.id == id)\n    if not update_blog_single.first():\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail=f\"Blog with id {id} not found\")\n    # it's bulk update example if user have same email using that email to filter it will make the changes for all user match the email\n    update_blog_single.update({'title':request.title,'body':request.body})\n    db.commit()\n    return 'Updated Successfully'",
+        "detail": "src.blog.controller.blogs",
+        "documentation": {}
+    },
+    {
+        "label": "create_users",
+        "kind": 2,
+        "importPath": "src.blog.controller.users",
+        "description": "src.blog.controller.users",
+        "peekOfCode": "def create_users(user:schemas.User,db:Session=Depends(database.get_db)):\n    print(user)\n    hash_password = hash.HashPassword.bcrypt(user.password)\n    new_user = models.User(name=user.name,email=user.email,password=hash_password)\n    db.add(new_user)\n    db.commit()\n    db.refresh(new_user)\n    return new_user\ndef get_user_by_id(id:int,db:Session=Depends(database.get_db)):\n    user = db.query(models.User).filter(models.User.id == id).first()",
+        "detail": "src.blog.controller.users",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_by_id",
+        "kind": 2,
+        "importPath": "src.blog.controller.users",
+        "description": "src.blog.controller.users",
+        "peekOfCode": "def get_user_by_id(id:int,db:Session=Depends(database.get_db)):\n    user = db.query(models.User).filter(models.User.id == id).first()\n    if not user:\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail=f\"user with {id} is not found\")\n    return user",
+        "detail": "src.blog.controller.users",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "src.blog.routers.authentication",
+        "description": "src.blog.routers.authentication",
+        "peekOfCode": "def login(response: Response,user:OAuth2PasswordRequestForm = Depends(),db:Session =Depends(get_db)):\n    verify_user = db.query(User).filter(User.email == user.username).first()\n    if not verify_user:\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail=f\"user not found in this {user.username}\")\n    if HashPassword.verify_password(user.password,verify_user.password):\n         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail=f\"Incorrect Password\")\n    # We store user information in the token\n    access_token = create_access_token(data={\"sub\":verify_user.email,\"username\":verify_user.name,\"id\":verify_user.id})\n    response.set_cookie(\n        key=\"access_token\",   # 🔑 must match Cookie() name",
+        "detail": "src.blog.routers.authentication",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "kind": 2,
+        "importPath": "src.blog.routers.authentication",
+        "description": "src.blog.routers.authentication",
+        "peekOfCode": "def logout(response: Response):\n    response.delete_cookie(\"access_token\")\n    return {\"message\": \"Logged out\"}",
+        "detail": "src.blog.routers.authentication",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "src.blog.routers.authentication",
+        "description": "src.blog.routers.authentication",
+        "peekOfCode": "router = APIRouter(\n    tags=[\"Authentication\"]\n)\n@router.post('/login')\ndef login(response: Response,user:OAuth2PasswordRequestForm = Depends(),db:Session =Depends(get_db)):\n    verify_user = db.query(User).filter(User.email == user.username).first()\n    if not verify_user:\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail=f\"user not found in this {user.username}\")\n    if HashPassword.verify_password(user.password,verify_user.password):\n         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail=f\"Incorrect Password\")",
+        "detail": "src.blog.routers.authentication",
+        "documentation": {}
+    },
+    {
+        "label": "blogs",
+        "kind": 2,
+        "importPath": "src.blog.routers.blog",
+        "description": "src.blog.routers.blog",
+        "peekOfCode": "def blogs(db:Session=Depends(database.get_db)):\n    return get_blogs(db)\n@router.post('/',status_code=status.HTTP_201_CREATED)\ndef create(\n           post:schemas.Blog,\n           db:Session=Depends(database.get_db),\n           current_user:schemas.token_user=Depends(get_current_user)):\n    return create_blog(post,db,current_user)\n@router.get('/{id}',status_code=status.HTTP_200_OK,response_model=schemas.Show_blog,)\ndef get_by_id(id:int,response:Response,db:Session=Depends(database.get_db),current_user:schemas.token_user=Depends(get_current_user)):",
+        "detail": "src.blog.routers.blog",
+        "documentation": {}
+    },
+    {
+        "label": "create",
+        "kind": 2,
+        "importPath": "src.blog.routers.blog",
+        "description": "src.blog.routers.blog",
+        "peekOfCode": "def create(\n           post:schemas.Blog,\n           db:Session=Depends(database.get_db),\n           current_user:schemas.token_user=Depends(get_current_user)):\n    return create_blog(post,db,current_user)\n@router.get('/{id}',status_code=status.HTTP_200_OK,response_model=schemas.Show_blog,)\ndef get_by_id(id:int,response:Response,db:Session=Depends(database.get_db),current_user:schemas.token_user=Depends(get_current_user)):\n    return get_blog_by_id(id,response,db)\n@router.delete(\"/{id}\",status_code=status.HTTP_204_NO_CONTENT)\ndef delete_blog(id:int,db:Session=Depends(database.get_db),current_user:schemas.token_user=Depends(get_current_user)):",
+        "detail": "src.blog.routers.blog",
+        "documentation": {}
+    },
+    {
+        "label": "get_by_id",
+        "kind": 2,
+        "importPath": "src.blog.routers.blog",
+        "description": "src.blog.routers.blog",
+        "peekOfCode": "def get_by_id(id:int,response:Response,db:Session=Depends(database.get_db),current_user:schemas.token_user=Depends(get_current_user)):\n    return get_blog_by_id(id,response,db)\n@router.delete(\"/{id}\",status_code=status.HTTP_204_NO_CONTENT)\ndef delete_blog(id:int,db:Session=Depends(database.get_db),current_user:schemas.token_user=Depends(get_current_user)):\n    return delete_blog_by_id(id,db)\n@router.put('/{id}',status_code=status.HTTP_202_ACCEPTED)\ndef update_blog(id:int,request:schemas.Blog,db:Session=Depends(database.get_db),current_user:schemas.token_user=Depends(get_current_user)):\n    return edit_blog(id,request,db)",
+        "detail": "src.blog.routers.blog",
+        "documentation": {}
+    },
+    {
+        "label": "delete_blog",
+        "kind": 2,
+        "importPath": "src.blog.routers.blog",
+        "description": "src.blog.routers.blog",
+        "peekOfCode": "def delete_blog(id:int,db:Session=Depends(database.get_db),current_user:schemas.token_user=Depends(get_current_user)):\n    return delete_blog_by_id(id,db)\n@router.put('/{id}',status_code=status.HTTP_202_ACCEPTED)\ndef update_blog(id:int,request:schemas.Blog,db:Session=Depends(database.get_db),current_user:schemas.token_user=Depends(get_current_user)):\n    return edit_blog(id,request,db)",
+        "detail": "src.blog.routers.blog",
+        "documentation": {}
+    },
+    {
+        "label": "update_blog",
+        "kind": 2,
+        "importPath": "src.blog.routers.blog",
+        "description": "src.blog.routers.blog",
+        "peekOfCode": "def update_blog(id:int,request:schemas.Blog,db:Session=Depends(database.get_db),current_user:schemas.token_user=Depends(get_current_user)):\n    return edit_blog(id,request,db)",
+        "detail": "src.blog.routers.blog",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "src.blog.routers.blog",
+        "description": "src.blog.routers.blog",
+        "peekOfCode": "router = APIRouter(\n    prefix=\"/blogs\",\n    tags=[\"Blogs\"],\n)\n@router.get('/',response_model=List[schemas.Show_all_blog])\ndef blogs(db:Session=Depends(database.get_db)):\n    return get_blogs(db)\n@router.post('/',status_code=status.HTTP_201_CREATED)\ndef create(\n           post:schemas.Blog,",
+        "detail": "src.blog.routers.blog",
+        "documentation": {}
+    },
+    {
+        "label": "create_user",
+        "kind": 2,
+        "importPath": "src.blog.routers.user",
+        "description": "src.blog.routers.user",
+        "peekOfCode": "def create_user(user:schemas.User,db:Session=Depends(database.get_db)):\n    return create_users(user,db)\n@router.get('/{id}',response_model=schemas.Show_User)\ndef get_user(id:int,db:Session=Depends(database.get_db)):    \n    return get_user_by_id(id,db)",
+        "detail": "src.blog.routers.user",
+        "documentation": {}
+    },
+    {
+        "label": "get_user",
+        "kind": 2,
+        "importPath": "src.blog.routers.user",
+        "description": "src.blog.routers.user",
+        "peekOfCode": "def get_user(id:int,db:Session=Depends(database.get_db)):    \n    return get_user_by_id(id,db)",
+        "detail": "src.blog.routers.user",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "src.blog.routers.user",
+        "description": "src.blog.routers.user",
+        "peekOfCode": "router = APIRouter(\n    prefix=\"/user\",\n    tags=[\"Users\"]\n)\n@router.post('/',status_code=status.HTTP_201_CREATED,response_model=schemas.Show_User)\ndef create_user(user:schemas.User,db:Session=Depends(database.get_db)):\n    return create_users(user,db)\n@router.get('/{id}',response_model=schemas.Show_User)\ndef get_user(id:int,db:Session=Depends(database.get_db)):    \n    return get_user_by_id(id,db)",
+        "detail": "src.blog.routers.user",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "kind": 2,
+        "importPath": "src.blog.cookies",
+        "description": "src.blog.cookies",
+        "peekOfCode": "def get_current_user(access_token: str | None = Cookie(default=None)):\n    print(\"Access Token from Cookie:\", access_token)\n    if access_token is None:\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"Not authenticated\",\n        )\n    credentials_exception = HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"Could not validate credentials\",",
+        "detail": "src.blog.cookies",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "src.blog.database",
+        "description": "src.blog.database",
+        "peekOfCode": "def get_db():\n    db=SessionLocal()\n    try:\n        # yield closes the connection after the request is done\n        yield db\n    except:\n        db.close()",
+        "detail": "src.blog.database",
+        "documentation": {}
+    },
+    {
+        "label": "SQLALCHEMY_DATABASE_URL",
+        "kind": 5,
+        "importPath": "src.blog.database",
+        "description": "src.blog.database",
+        "peekOfCode": "SQLALCHEMY_DATABASE_URL = 'postgresql+psycopg2://postgres:1234@localhost:5432/mydb'\n# Create the engine\nengine = create_engine(SQLALCHEMY_DATABASE_URL)\n# Create a configured \"Session\" class\nSessionLocal = sessionmaker(bind=engine, autocommit=False,autoflush=False)\n# Create a Base class for declarative class definitions\nBase = declarative_base()\ndef get_db():\n    db=SessionLocal()\n    try:",
+        "detail": "src.blog.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "src.blog.database",
+        "description": "src.blog.database",
+        "peekOfCode": "engine = create_engine(SQLALCHEMY_DATABASE_URL)\n# Create a configured \"Session\" class\nSessionLocal = sessionmaker(bind=engine, autocommit=False,autoflush=False)\n# Create a Base class for declarative class definitions\nBase = declarative_base()\ndef get_db():\n    db=SessionLocal()\n    try:\n        # yield closes the connection after the request is done\n        yield db",
+        "detail": "src.blog.database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "src.blog.database",
+        "description": "src.blog.database",
+        "peekOfCode": "SessionLocal = sessionmaker(bind=engine, autocommit=False,autoflush=False)\n# Create a Base class for declarative class definitions\nBase = declarative_base()\ndef get_db():\n    db=SessionLocal()\n    try:\n        # yield closes the connection after the request is done\n        yield db\n    except:\n        db.close()",
+        "detail": "src.blog.database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "src.blog.database",
+        "description": "src.blog.database",
+        "peekOfCode": "Base = declarative_base()\ndef get_db():\n    db=SessionLocal()\n    try:\n        # yield closes the connection after the request is done\n        yield db\n    except:\n        db.close()",
+        "detail": "src.blog.database",
+        "documentation": {}
+    },
+    {
+        "label": "HashPassword",
+        "kind": 6,
+        "importPath": "src.blog.hash",
+        "description": "src.blog.hash",
+        "peekOfCode": "class HashPassword:\n    def bcrypt(password:str):\n        return password_hash.hash(password)\n    def verify_password(plain_password, hashed_password):\n        return password_hash.verify(plain_password, hashed_password)",
+        "detail": "src.blog.hash",
+        "documentation": {}
+    },
+    {
+        "label": "password_hash",
+        "kind": 5,
+        "importPath": "src.blog.hash",
+        "description": "src.blog.hash",
+        "peekOfCode": "password_hash = PasswordHash.recommended()\nclass HashPassword:\n    def bcrypt(password:str):\n        return password_hash.hash(password)\n    def verify_password(plain_password, hashed_password):\n        return password_hash.verify(plain_password, hashed_password)",
+        "detail": "src.blog.hash",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "src.blog.main",
+        "description": "src.blog.main",
+        "peekOfCode": "app = FastAPI()\norigins = [\n    \"http://localhost:3000\",\n    \"http://localhost:3001\",\n    \"http://localhost.tiangolo.com\",\n    \"https://localhost.tiangolo.com\",\n    \"http://localhost\",\n    \"http://localhost:8080\",\n]\napp.add_middleware(",
+        "detail": "src.blog.main",
+        "documentation": {}
+    },
+    {
+        "label": "origins",
+        "kind": 5,
+        "importPath": "src.blog.main",
+        "description": "src.blog.main",
+        "peekOfCode": "origins = [\n    \"http://localhost:3000\",\n    \"http://localhost:3001\",\n    \"http://localhost.tiangolo.com\",\n    \"https://localhost.tiangolo.com\",\n    \"http://localhost\",\n    \"http://localhost:8080\",\n]\napp.add_middleware(\n    CORSMiddleware,",
+        "detail": "src.blog.main",
+        "documentation": {}
+    },
+    {
+        "label": "Blog",
+        "kind": 6,
+        "importPath": "src.blog.models",
+        "description": "src.blog.models",
+        "peekOfCode": "class Blog(Base):\n    __tablename__ = \"blogs\"\n    id:Mapped[int] = mapped_column(Integer,primary_key=True,index=True)\n    title:Mapped[str]= mapped_column(String)\n    body:Mapped[str] = mapped_column(String)\n    user_id:Mapped[int] = mapped_column(Integer,ForeignKey('users.id'))\n    creator  = relationship(\"User\",back_populates=\"blogs\")\nclass User(Base):\n    __tablename__ = \"users\"\n    id:Mapped[int] = mapped_column(Integer,primary_key=True,index=True)",
+        "detail": "src.blog.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "src.blog.models",
+        "description": "src.blog.models",
+        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    id:Mapped[int] = mapped_column(Integer,primary_key=True,index=True)\n    name:Mapped[str] = mapped_column(String)\n    email:Mapped[str] = mapped_column(String)\n    password:Mapped[str]=mapped_column(String)\n    blogs = relationship('Blog',back_populates=\"creator\")",
+        "detail": "src.blog.models",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "kind": 2,
+        "importPath": "src.blog.oauth",
+        "description": "src.blog.oauth",
+        "peekOfCode": "def get_current_user(access_token: str = Depends(oauth2_scheme)):\n    credentials_exception = HTTPException(\n        status_code=status.HTTP_401_UNAUTHORIZED,\n        detail=\"Could not validate credentials\",\n        headers={\"WWW-Authenticate\": \"Bearer\"},\n    )\n    return token.verify_access_token(access_token, credentials_exception)",
+        "detail": "src.blog.oauth",
+        "documentation": {}
+    },
+    {
+        "label": "oauth2_scheme",
+        "kind": 5,
+        "importPath": "src.blog.oauth",
+        "description": "src.blog.oauth",
+        "peekOfCode": "oauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"login\")\n# Get the current user from the access token\ndef get_current_user(access_token: str = Depends(oauth2_scheme)):\n    credentials_exception = HTTPException(\n        status_code=status.HTTP_401_UNAUTHORIZED,\n        detail=\"Could not validate credentials\",\n        headers={\"WWW-Authenticate\": \"Bearer\"},\n    )\n    return token.verify_access_token(access_token, credentials_exception)",
+        "detail": "src.blog.oauth",
+        "documentation": {}
+    },
+    {
+        "label": "BaseBlog",
+        "kind": 6,
+        "importPath": "src.blog.schemas",
+        "description": "src.blog.schemas",
+        "peekOfCode": "class BaseBlog(BaseModel):\n    title:str\n    body:str \nclass Blog(BaseBlog):\n    class Config():\n        orm_mode = True \nclass User(BaseModel):\n    name:str\n    email:str\n    password:str",
+        "detail": "src.blog.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Blog",
+        "kind": 6,
+        "importPath": "src.blog.schemas",
+        "description": "src.blog.schemas",
+        "peekOfCode": "class Blog(BaseBlog):\n    class Config():\n        orm_mode = True \nclass User(BaseModel):\n    name:str\n    email:str\n    password:str\nclass Login(BaseModel):\n    username:str\n    password:str",
+        "detail": "src.blog.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "src.blog.schemas",
+        "description": "src.blog.schemas",
+        "peekOfCode": "class User(BaseModel):\n    name:str\n    email:str\n    password:str\nclass Login(BaseModel):\n    username:str\n    password:str\nclass Show_User_Detail(BaseModel):\n    name:str\n    email:str",
+        "detail": "src.blog.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Login",
+        "kind": 6,
+        "importPath": "src.blog.schemas",
+        "description": "src.blog.schemas",
+        "peekOfCode": "class Login(BaseModel):\n    username:str\n    password:str\nclass Show_User_Detail(BaseModel):\n    name:str\n    email:str\nclass token_user(BaseModel):\n    id:int\n    email:str\n    username:str",
+        "detail": "src.blog.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Show_User_Detail",
+        "kind": 6,
+        "importPath": "src.blog.schemas",
+        "description": "src.blog.schemas",
+        "peekOfCode": "class Show_User_Detail(BaseModel):\n    name:str\n    email:str\nclass token_user(BaseModel):\n    id:int\n    email:str\n    username:str\nclass Show_User(Show_User_Detail):\n    blogs: List[Blog] = []\n    class Config():",
+        "detail": "src.blog.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "token_user",
+        "kind": 6,
+        "importPath": "src.blog.schemas",
+        "description": "src.blog.schemas",
+        "peekOfCode": "class token_user(BaseModel):\n    id:int\n    email:str\n    username:str\nclass Show_User(Show_User_Detail):\n    blogs: List[Blog] = []\n    class Config():\n        orm_mode = True\nclass Show_all_blog(BaseModel):\n    # if you want only title you can specified the key(title,body) or remove the key(title,body) if you remove key(title,body) you can see full object in response",
+        "detail": "src.blog.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Show_User",
+        "kind": 6,
+        "importPath": "src.blog.schemas",
+        "description": "src.blog.schemas",
+        "peekOfCode": "class Show_User(Show_User_Detail):\n    blogs: List[Blog] = []\n    class Config():\n        orm_mode = True\nclass Show_all_blog(BaseModel):\n    # if you want only title you can specified the key(title,body) or remove the key(title,body) if you remove key(title,body) you can see full object in response\n    id:int\n    title:str\n    body:str\n    class Config():",
+        "detail": "src.blog.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Show_all_blog",
+        "kind": 6,
+        "importPath": "src.blog.schemas",
+        "description": "src.blog.schemas",
+        "peekOfCode": "class Show_all_blog(BaseModel):\n    # if you want only title you can specified the key(title,body) or remove the key(title,body) if you remove key(title,body) you can see full object in response\n    id:int\n    title:str\n    body:str\n    class Config():\n        orm_mode = True\n#'orm_mode' has been renamed to 'from_attributes'\nclass Show_blog(BaseBlog):\n    creator:Show_User_Detail",
+        "detail": "src.blog.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Show_blog",
+        "kind": 6,
+        "importPath": "src.blog.schemas",
+        "description": "src.blog.schemas",
+        "peekOfCode": "class Show_blog(BaseBlog):\n    creator:Show_User_Detail\nclass Token(BaseModel):\n    access_token: str\n    token_type: str\nclass TokenData(BaseModel):\n    username: str | None = None",
+        "detail": "src.blog.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Token",
+        "kind": 6,
+        "importPath": "src.blog.schemas",
+        "description": "src.blog.schemas",
+        "peekOfCode": "class Token(BaseModel):\n    access_token: str\n    token_type: str\nclass TokenData(BaseModel):\n    username: str | None = None",
+        "detail": "src.blog.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TokenData",
+        "kind": 6,
+        "importPath": "src.blog.schemas",
+        "description": "src.blog.schemas",
+        "peekOfCode": "class TokenData(BaseModel):\n    username: str | None = None",
+        "detail": "src.blog.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "create_access_token",
+        "kind": 2,
+        "importPath": "src.blog.token",
+        "description": "src.blog.token",
+        "peekOfCode": "def create_access_token(data: dict, expires_delta: timedelta | None = None):\n    to_encode = data.copy()\n    if expires_delta:\n        expire = datetime.now(timezone.utc) + expires_delta\n    else:\n        expire = datetime.now(timezone.utc) + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)\n    to_encode.update({\"exp\": expire})\n    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)\n    return encoded_jwt\n# Verify and decode a JWT access token",
+        "detail": "src.blog.token",
+        "documentation": {}
+    },
+    {
+        "label": "verify_access_token",
+        "kind": 2,
+        "importPath": "src.blog.token",
+        "description": "src.blog.token",
+        "peekOfCode": "def verify_access_token(token: str, credentials_exception):\n    try:\n            payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])\n            email = payload.get(\"sub\")\n            username = payload.get(\"username\")\n            user_id = payload.get(\"id\")\n            print(payload)\n            if email is None:\n                raise credentials_exception\n            token_data = schemas.token_user(id=user_id,email=email,username=username)",
+        "detail": "src.blog.token",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "src.blog.token",
+        "description": "src.blog.token",
+        "peekOfCode": "SECRET_KEY = \"09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7\"\nALGORITHM = \"HS256\"\nACCESS_TOKEN_EXPIRE_MINUTES = 30\n# Create a JWT access token\ndef create_access_token(data: dict, expires_delta: timedelta | None = None):\n    to_encode = data.copy()\n    if expires_delta:\n        expire = datetime.now(timezone.utc) + expires_delta\n    else:\n        expire = datetime.now(timezone.utc) + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)",
+        "detail": "src.blog.token",
+        "documentation": {}
+    },
+    {
+        "label": "ALGORITHM",
+        "kind": 5,
+        "importPath": "src.blog.token",
+        "description": "src.blog.token",
+        "peekOfCode": "ALGORITHM = \"HS256\"\nACCESS_TOKEN_EXPIRE_MINUTES = 30\n# Create a JWT access token\ndef create_access_token(data: dict, expires_delta: timedelta | None = None):\n    to_encode = data.copy()\n    if expires_delta:\n        expire = datetime.now(timezone.utc) + expires_delta\n    else:\n        expire = datetime.now(timezone.utc) + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)\n    to_encode.update({\"exp\": expire})",
+        "detail": "src.blog.token",
+        "documentation": {}
+    },
+    {
+        "label": "ACCESS_TOKEN_EXPIRE_MINUTES",
+        "kind": 5,
+        "importPath": "src.blog.token",
+        "description": "src.blog.token",
+        "peekOfCode": "ACCESS_TOKEN_EXPIRE_MINUTES = 30\n# Create a JWT access token\ndef create_access_token(data: dict, expires_delta: timedelta | None = None):\n    to_encode = data.copy()\n    if expires_delta:\n        expire = datetime.now(timezone.utc) + expires_delta\n    else:\n        expire = datetime.now(timezone.utc) + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)\n    to_encode.update({\"exp\": expire})\n    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
+        "detail": "src.blog.token",
+        "documentation": {}
+    },
+    {
+        "label": "Blog",
+        "kind": 6,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "class Blog(BaseModel):\n    title:str\n    body:str\n    published:Optional[bool] = None\n@app.post('/blog')\ndef post_blog(blog:Blog):\n    return {\"data\":f\"post is created in title name of {blog.title}\"}\nif __name__  == '__main__':\n    uvicorn.run(app,host='0.0.0.0',port='9000')",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def index(limit:int = 0,published:bool = False,sort:Optional[str] = None):\n    if published : return {\"data\":f\"{limit} published blogs display {sort}\"}\n    else: return {\"data\":f\"{limit} blogs display {sort}\"}\n@app.get('/blog/unpublished')\ndef about():\n    return {\"data\":\"Unpublished blog\"}\n@app.get('/blog/{id}')\ndef aboutBlog(id:int):\n    return {'data':{\"page\":id}}\nclass Blog(BaseModel):",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "about",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def about():\n    return {\"data\":\"Unpublished blog\"}\n@app.get('/blog/{id}')\ndef aboutBlog(id:int):\n    return {'data':{\"page\":id}}\nclass Blog(BaseModel):\n    title:str\n    body:str\n    published:Optional[bool] = None\n@app.post('/blog')",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "aboutBlog",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def aboutBlog(id:int):\n    return {'data':{\"page\":id}}\nclass Blog(BaseModel):\n    title:str\n    body:str\n    published:Optional[bool] = None\n@app.post('/blog')\ndef post_blog(blog:Blog):\n    return {\"data\":f\"post is created in title name of {blog.title}\"}\nif __name__  == '__main__':",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "post_blog",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def post_blog(blog:Blog):\n    return {\"data\":f\"post is created in title name of {blog.title}\"}\nif __name__  == '__main__':\n    uvicorn.run(app,host='0.0.0.0',port='9000')",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "app = FastAPI()\n@app.get('/blog')\ndef index(limit:int = 0,published:bool = False,sort:Optional[str] = None):\n    if published : return {\"data\":f\"{limit} published blogs display {sort}\"}\n    else: return {\"data\":f\"{limit} blogs display {sort}\"}\n@app.get('/blog/unpublished')\ndef about():\n    return {\"data\":\"Unpublished blog\"}\n@app.get('/blog/{id}')\ndef aboutBlog(id:int):",
+        "detail": "src.main",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div :style="{display:'flex',gap:'10px'}">
+                <input v-model="newMovie.title" placeholder="Create Movie title"/>
+                <input v-model="newMovie.year" placeholder="Create Movie year"/>
+                <div>
+                        <button @click="addMovie">Add Movie</button>
+                        <button @click="removeLastMovie">Remove Movie</button>
+                </div>
+        </div>
+        <div>
+            <h5 v-if="setLimit">Movies is greater than 5 can't add movie</h5>
+            <h5 v-else-if="getAllMovies.length>=5">Reached movie add Limit</h5>
+            <ul>
+                <li v-for="(props,index) in getAllMovies" :key="index">
+                    {{props}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+        const {createApp,ref,reactive,computed,watch} = Vue
+
+        createApp({
+            setup() {
+                let newMovie = ref({title:"",year:""})
+                /*
+                    if i use reactive spread operator is not work but push will work because when using spread operator, 
+                    it's resigning so proxy is not wrapped new value so that it will not show in dom.  
+                    Vue tracks mutations (e.g., .push(), .splice(), .pop()) directly.
+                */ 
+                let movies = ref([
+                    {id:1,title:"Movie 1",year:2000},
+                    {id:2,title:"Movie 2",year:2001},
+                    {id:3,title:"Movie 3",year:2002},
+                    {id:4,title:"Movie 4",year:2020}
+                ])
+                let setLimit = ref(false)
+                let addMovie = ()=>{
+                    if(newMovie.value.title && newMovie.value.year){
+                        movies.value = [...movies.value,{id:movies.value.length,title:newMovie.value.title,year:newMovie.value.year}]
+                        newMovie.value.title=""
+                        newMovie.value.year=""
+                    }else{
+                        alert('Field is empty...!!!')
+                    }
+                }
+
+                let removeLastMovie =()=>{
+                    movies.value.pop()
+                }
+
+                let getAllMovies= computed(()=>{
+                    console.log("RENDEINGGG")
+                        const allMovies = movies.value.map(({title,year})=>`The  ${title} is released in ${year}`)
+                    return allMovies
+                })
+                watch(movies,(newVal,oldVal)=>{
+                    if(newVal.length <= 3){
+                        setLimit.value = true
+                    }else if(newVal.length <= 5 && newVal.length >= 3){
+                        setLimit.value = false
+                    }
+                },{deep:true})
+                return{
+                    newMovie,
+                    movies,
+                    addMovie,
+                    removeLastMovie,
+                    getAllMovies,
+                    setLimit
+                }
+            }
+        }).mount('#app')
+</script>
+</html>

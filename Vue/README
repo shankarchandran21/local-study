@@ -1,0 +1,129 @@
+🔎 How Vue Works in the Background
+
+Vue is a reactive framework. Its magic is in reactivity + virtual DOM.
+
+1. Reactivity System
+
+Vue wraps your data (ref, reactive) using Proxies.
+
+When you access message.value or user.name, Vue tracks that dependency.
+
+When you change the value, Vue knows which part of the UI depends on it → it schedules a re-render.
+
+👉 This is why updating message.value automatically updates <h1>{{ message }}</h1>.
+
+2. Template Compilation
+
+The HTML template (<h1>{{message}}</h1>) is compiled into a render function.
+
+That render function produces a Virtual DOM tree (a lightweight JS object structure representing the real DOM).
+
+3. Virtual DOM & Diffing
+
+On initial render → Vue builds the Virtual DOM and mounts real DOM.
+
+On updates → Vue builds a new Virtual DOM, compares it with the old one (diffing), and applies minimal changes to the real DOM.
+
+👉 This is why Vue is fast: it doesn’t rebuild the whole page, only updates the changed parts.
+
+4. Lifecycle
+
+Vue components go through setup → mount → update → unmount.
+
+During this, Vue handles dependency tracking and efficient updates.
+
+🖼️ Diagram for Beginners
+
+Here’s a simplified diagram of how Vue works under the hood:
+
+          +------------------+
+          |   Your Data      |   (ref, reactive)
+          +------------------+
+                    |
+          (Proxy tracks dependencies)
+                    v
+          +------------------+
+          |   Template       |   ({{ message }}, v-html, etc.)
+          +------------------+
+                    |
+          (Compiled into render function)
+                    v
+          +------------------+
+          | Virtual DOM Tree |
+          +------------------+
+                    |
+          (Diff with old tree)
+                    v
+          +------------------+
+          |   Real DOM       |   (Browser UI updates)
+          +------------------+
+
+🔎 What is a Proxy in JavaScript?
+
+A Proxy is a special JavaScript object that lets you intercept and customize operations (like reading, writing, deleting properties) on another object.
+
+Think of it as a “middleman” between your code and the actual object.
+Example :
+    const user = { name: "Shankar", age: 26 };
+
+const proxyUser = new Proxy(user, {
+  get(target, key) {
+    console.log(`Accessing ${key}`);
+    return target[key];
+  },
+  set(target, key, value) {
+    console.log(`Updating ${key} to ${value}`);
+    target[key] = value;
+    return true;
+  }
+});
+
+console.log(proxyUser.name); // Accessing name → Shankar
+proxyUser.age = 27;          // Updating age to 27
+
+This is exactly what Vue 3 does internally with reactive() and ref():
+    get → Track dependencies (who is reading this value)
+    set → Trigger UI updates (who should re-render)
+
+🔎 What does “Compiled into render function” mean?
+
+In Vue (and also React with JSX), your template:
+
+<h1>{{ message }}</h1>
+
+
+is not executed directly in the browser.
+Instead, Vue compiles it into a JavaScript function (called a render function) that returns a Virtual DOM tree.
+
+---------------------------------------------------------------------------------------------------------------
+🔎What is ref and reactive 
+ref and reactive used for trigger render we can use both of them for primitive and non primitive data type but there is recommend way
+
+    1. ref is used for primitive data type (sting,boolean,number,single value)
+        - access value using variableName.value
+    2.reactive is used for non primitive (array,object,group of values)
+        - access value using variableName
+
+🔎 Diff of ref and reactive
+  1.reactive wraps the whole object/array in a Proxy, 
+    so mutations like push, pop, property updates are tracked automatically.
+    reassigned will not work in reactive
+
+  2.ref tracks only when .value is reassigned; 
+    mutations inside .value don’t trigger reactivity unless you use "deep: true" or watch specific properties.
+
+EXAMPLE:
+    watch(movies,(newVal,oldVal)=>{
+                    if(newVal.length <= 3){
+                        setLimit.value = true
+                    }else if(newVal.length <= 5 && newVal.length >= 3){
+                        setLimit.value = false
+                    }
+                },{deep:true})
+---------------------------------------------------------------------------------------------------------------
+Directives 
+        - Directives are special attributes (start with v-) that extend HTML with Vue’s reactivity.
+        - They let Vue control DOM behavior (show, hide, bind, loop, listen to events, etc.).
+        - Built-ins: v-bind, v-model, v-if, v-for, v-on, v-show, v-html.
+        - You can also create custom directives.
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+       <div :style="{border:'1px solid black',padding:'5px'}">
+           <h1>Two Way binding</h1>
+             <h1>{{getMessage}}</h1>
+             <h1>{{age}}</h1>
+            <input type="text" placeholder="name" v-model="message"/>
+            <input type="text" placeholder="name" v-model.trim="message"/>
+            <input type="number" placeholder="name" v-model.number="age"/>
+       </div>
+       <div>
+            <h1>{{counter}}</h1>
+            <button @click="counter='increment'">Increment</button>
+            <button @click="counter='decrement'">Decrement</button>
+            <button @click="counter='add5'">Add 5</button>
+           
+       </div>
+    </div>
+</body>
+<script>
+        const {createApp,ref,computed,watch,reactive} =Vue
+
+        createApp({
+            setup() {
+                const message = ref("Shankar")
+                const age = ref(26)
+                const obj = reactive({ count: 0 })
+
+                const getMessage = computed((prev)=>{
+                    console.log(prev)
+                    console.log("Message is render")
+                    return message.value
+                })
+                // Watch is work in ref so we give variable name only
+                watch(message,(newVal,oldVal)=>{
+                    console.log("RENDER")
+                    console.log("Old:",oldVal,"New:",newVal);
+                })
+                // watch is not work in reactive so we create function and return value
+                watch(()=>obj.count,()=>{
+                    if(obj.count >= 5){
+                        alert(`Count is equal and greater than 5 and the count is ${obj.count}`)
+                    }
+                })
+
+                const counter = computed({
+                    get(){
+                        return obj.count
+                    },
+                    set(value){
+                        if(value === "increment"){
+                            obj.count++
+                        }else if(value === "decrement"){
+                            obj.count--
+                        }else if(value === "add5"){
+                            obj.count +=5
+                        }
+                    }
+                })
+                const decrement = computed(()=>{
+                    obj.count--
+                })
+                
+                return{
+                  message,
+                  age,
+                  obj,
+                  getMessage,
+                  decrement,
+                  counter
+                }
+            }
+        }).mount("#app")
+</script>
+</html>

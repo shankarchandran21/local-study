@@ -1,0 +1,155 @@
+[
+    {
+        "label": "ASCL",
+        "kind": 2,
+        "importPath": "youtube.basicMath.index",
+        "description": "youtube.basicMath.index",
+        "peekOfCode": "def ASCLL (val:str):\n    arr=[0]*26\n    for i in range(len(val)):\n        count:int = ord(val[i]) - ord('A')\n        arr[count] +=1\n    for i in range(len(arr)):\n        ch = chr(i+ord('A'))\n        print(f\"{ch} = {arr[i]}\")\nASCLL('AABCL')\ndef countOfDigit(n):",
+        "detail": "youtube.basicMath.index",
+        "documentation": {}
+    },
+    {
+        "label": "countOfDigit",
+        "kind": 2,
+        "importPath": "youtube.basicMath.index",
+        "description": "youtube.basicMath.index",
+        "peekOfCode": "def countOfDigit(n):\n    count = 0\n    while(n>0):\n        count +=1\n        n  = int(n/10)\n    print(count)\ncountOfDigit(123)\ndef reversNumber(n):\n    reverse = 0\n    while(n):",
+        "detail": "youtube.basicMath.index",
+        "documentation": {}
+    },
+    {
+        "label": "reversNumber",
+        "kind": 2,
+        "importPath": "youtube.basicMath.index",
+        "description": "youtube.basicMath.index",
+        "peekOfCode": "def reversNumber(n):\n    reverse = 0\n    while(n):\n        reverse *= 10\n        reverse += n%10\n        n = int(n/10)\n    print(reverse)\nreversNumber(123)\ndef subArray(arr):\n    result = []",
+        "detail": "youtube.basicMath.index",
+        "documentation": {}
+    },
+    {
+        "label": "subArray",
+        "kind": 2,
+        "importPath": "youtube.basicMath.index",
+        "description": "youtube.basicMath.index",
+        "peekOfCode": "def subArray(arr):\n    result = []\n    for i in range(len(arr)):\n        subArray =[]\n        # print(i)\n        for j in range(i,len(arr)):\n            print(j)\n            subArray.append(arr[j])\n            result.append(subArray.copy())\n        # print(result)",
+        "detail": "youtube.basicMath.index",
+        "documentation": {}
+    },
+    {
+        "label": "naturalNumber",
+        "kind": 2,
+        "importPath": "youtube.basicMath.index",
+        "description": "youtube.basicMath.index",
+        "peekOfCode": "def naturalNumber(n):\n    ans = int( n*(n+1)/2)\n    print(ans)\n    return ans\nnaturalNumber(5)\ndef sum_Odd_num(n):\n    odd_or_even =  int(n/2) if n % 2 == 0 else int((n/2)) + 1\n    ans = odd_or_even * odd_or_even\n    print(ans)\n    return ans",
+        "detail": "youtube.basicMath.index",
+        "documentation": {}
+    },
+    {
+        "label": "sum_Odd_num",
+        "kind": 2,
+        "importPath": "youtube.basicMath.index",
+        "description": "youtube.basicMath.index",
+        "peekOfCode": "def sum_Odd_num(n):\n    odd_or_even =  int(n/2) if n % 2 == 0 else int((n/2)) + 1\n    ans = odd_or_even * odd_or_even\n    print(ans)\n    return ans\nsum_Odd_num(5)\ndef sum_even_num(n):\n    ans = naturalNumber(n) - sum_Odd_num(n)\n    print(ans)\nsum_even_num(5)",
+        "detail": "youtube.basicMath.index",
+        "documentation": {}
+    },
+    {
+        "label": "sum_even_num",
+        "kind": 2,
+        "importPath": "youtube.basicMath.index",
+        "description": "youtube.basicMath.index",
+        "peekOfCode": "def sum_even_num(n):\n    ans = naturalNumber(n) - sum_Odd_num(n)\n    print(ans)\nsum_even_num(5)\n# _________________________________________________________________________________________________________________________________\ndef printDivisors(n):\n    for i in range(1,int(n**0.5)+1):\n        if(n % i == 0 ):\n            print(i)\n            if(i*i == n):",
+        "detail": "youtube.basicMath.index",
+        "documentation": {}
+    },
+    {
+        "label": "printDivisors",
+        "kind": 2,
+        "importPath": "youtube.basicMath.index",
+        "description": "youtube.basicMath.index",
+        "peekOfCode": "def printDivisors(n):\n    for i in range(1,int(n**0.5)+1):\n        if(n % i == 0 ):\n            print(i)\n            if(i*i == n):\n                continue\n            print(n//i)\nprintDivisors(36)\ndef primeNumber(n):\n    for i in range(2,int(n**0.5)+1):",
+        "detail": "youtube.basicMath.index",
+        "documentation": {}
+    },
+    {
+        "label": "primeNumber",
+        "kind": 2,
+        "importPath": "youtube.basicMath.index",
+        "description": "youtube.basicMath.index",
+        "peekOfCode": "def primeNumber(n):\n    for i in range(2,int(n**0.5)+1):\n        if(n%i == 0):\n            print(\"It's not prime\")\n            return 0\n        if(n == 1):\n            print(\"It's not prime\")\n            return 0\n        print(\"It's prime\")\n        return 1",
+        "detail": "youtube.basicMath.index",
+        "documentation": {}
+    },
+    {
+        "label": "primeFactorial",
+        "kind": 2,
+        "importPath": "youtube.basicMath.index",
+        "description": "youtube.basicMath.index",
+        "peekOfCode": "def primeFactorial(n):\n    result =[]\n    for i in range(2,int(n**0.5)+1):\n        if(n%i==0):\n            result.append(i)\n            while(n%i== 0):\n                n = n//i\n    if(n > 1):\n        result.append(n)\n    print(result)",
+        "detail": "youtube.basicMath.index",
+        "documentation": {}
+    },
+    {
+        "label": "sieve_of_eratosthenes",
+        "kind": 2,
+        "importPath": "youtube.basicMath.index",
+        "description": "youtube.basicMath.index",
+        "peekOfCode": "def sieve_of_eratosthenes(n):\n    arr = [True]*(n + 1)\n    count = 1\n    for i in range(3,int(n**0.5)+1,2):\n        if(arr[i]):\n            count +=1\n            for j in range(i*i,n+1,i):\n                arr[j] = False\n    root = int(n**0.5)\n    oddEvenRoot = root + (2 if root % 2 == 1  else 1)",
+        "detail": "youtube.basicMath.index",
+        "documentation": {}
+    },
+    {
+        "label": "BinaryExponentiation",
+        "kind": 2,
+        "importPath": "youtube.basicMath.index",
+        "description": "youtube.basicMath.index",
+        "peekOfCode": "def BinaryExponentiation(base,power):\n    ans = 1\n    while(power > 0 ):\n        if(power%2 != 0):\n            print(power)\n            ans *= base\n        base = base * base\n        power = int(power/2)\n    print(ans)\nBinaryExponentiation(2,5)",
+        "detail": "youtube.basicMath.index",
+        "documentation": {}
+    },
+    {
+        "label": "GCD",
+        "kind": 2,
+        "importPath": "youtube.basicMath.index",
+        "description": "youtube.basicMath.index",
+        "peekOfCode": "def GCD(a,b):\n    val1=None\n    val2=None\n    if(a>b):\n        val1 = b\n        val2 = a\n    else:\n        val1 = a\n        val2 = b\n    while(val1 > 0):",
+        "detail": "youtube.basicMath.index",
+        "documentation": {}
+    },
+    {
+        "label": "LCM",
+        "kind": 2,
+        "importPath": "youtube.basicMath.index",
+        "description": "youtube.basicMath.index",
+        "peekOfCode": "def LCM(a,b):\n    ans = a*b/GCD(a,b)\n    print(ans)\nLCM(12,18)",
+        "detail": "youtube.basicMath.index",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "youtube.pattern.index",
+        "description": "youtube.pattern.index",
+        "peekOfCode": "n = 5\nfor i in range(n):\n    for j in range(n):\n        print('*', end='')\n    print('') \nfor i in range(1,n+1):\n    row = ''\n    for j in range(i):\n        row += '* '\n    print(row)",
+        "detail": "youtube.pattern.index",
+        "documentation": {}
+    },
+    {
+        "label": "printValue",
+        "kind": 5,
+        "importPath": "youtube.pattern.index",
+        "description": "youtube.pattern.index",
+        "peekOfCode": "printValue = 1\nfor i in range(1,n+1):\n    printValue = 0 if i % 2 == 0 else 1\n    for j in range(1,i+1):\n        print(printValue, end=' ')\n        printValue = 0 if printValue == 1 else 1\n    print('')\nprintValueNum = 1\nfor i in range(1,n+1):\n    for j in range(1,i+1):",
+        "detail": "youtube.pattern.index",
+        "documentation": {}
+    },
+    {
+        "label": "printValueNum",
+        "kind": 5,
+        "importPath": "youtube.pattern.index",
+        "description": "youtube.pattern.index",
+        "peekOfCode": "printValueNum = 1\nfor i in range(1,n+1):\n    for j in range(1,i+1):\n        print(printValueNum, end=' ')\n        printValueNum += 1\n    print('')\nfor i in range(1,n+1):\n    for j in range(1,n+2-i):\n        print('*', end=' ')\n    print('')",
+        "detail": "youtube.pattern.index",
+        "documentation": {}
+    }
+]
